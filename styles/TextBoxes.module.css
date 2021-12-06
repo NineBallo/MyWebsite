@@ -33,6 +33,39 @@
 
 
 
+.snakeParent {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.snakeChild {
+    height: 400px;
+    width: 95vw;
+
+    border-bottom: 1px solid white;
+
+    display: flex;
+    align-items: stretch;
+}
+
+.snakeImg {
+    width: 500px;
+    flex-grow: 0;
+}
+
+.snakeSpacer {
+    width: 20%;
+    height: 100%;
+    flex-grow: 1;
+}
+
+.snakeText {
+ float: right;
+    flex-grow: 0;
+}
+
+
+
 /*MOBILE */
 @media (max-width: 900px) {
     .infoParent {

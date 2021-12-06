@@ -41,16 +41,16 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.grid}>
-          <Link href="/projects">
+          <Link href="/Projects">
             <div className={styles.card}>
               <b style={{fontSize: "120%"}}>My Projects</b>
               <p style={{fontSize: "100%"}}>All of my current public projects and what they do.</p>
             </div>
           </Link>
 
-          <Link href="/volenteer">
+          <Link href="/Volunteer">
             <div className={styles.card}>
-              <b style={{fontSize: "120%"}}>Volenteer Work and "Open-Source" contributions</b>
+              <b style={{fontSize: "120%"}}>Volunteer Work and "Open-Source" contributions</b>
               <p style={{fontSize: "100%"}}>
                 Here you can find some of the time I've contributed to the
                 community.
@@ -58,14 +58,14 @@ export default function Home() {
             </div>
           </Link>
 
-          <Link href="/contact">
+          <Link href="/Contact">
             <div className={styles.card}>
               <b style={{fontSize: "120%"}}>Contact Me</b>
               <p style={{fontSize: "100%"}}>If you wish to get in touch here is my contact info!</p>
             </div>
           </Link>
 
-          <Link href="/aboutme">
+          <Link href="/AboutMe">
             <div className={styles.card}>
               <b style={{fontSize: "120%"}}>About Me</b>
               <p style={{fontSize: "100%"}}>Learn some more about me!</p>

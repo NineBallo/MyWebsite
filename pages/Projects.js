@@ -23,17 +23,17 @@ export default function Projects() {
       </Head>
 
       <Header goBackLink="/">
-        <Link href="/volunteer">
+        <Link href="/Volunteer">
           <div className={styles.subpageButton}>
-            <p>Volunteer work</p>
+            <p>Volunteer Work</p>
           </div>
         </Link>
-        <Link href="/contact">
+        <Link href="/Contact">
           <div className={styles.subpageButton}>
             <p>Contact Me</p>
           </div>
         </Link>
-        <Link href="/aboutme">
+        <Link href="/AboutMe">
           <div className={styles.subpageButton}>
             <p>About Me</p>
           </div>
@@ -44,14 +44,14 @@ export default function Projects() {
       <h1 className={styles.title}>My Projects</h1>
 
       <div className={styles.grid}>
-        <Link href={"/projects/NineEngine"}>
+        <Link href={"/Projects/NineEngine"}>
           <div className={styles.card}>
             <h2>NineEngine</h2>
             <p>A simple vulkan renderer as a intro to graphics programming.</p>
           </div>
         </Link>
 
-        <Link href={"/projects/ZipZorpBeebleBorp"}>
+        <Link href={"/Projects/ZipZorpBeebleBorp"}>
           <div className={styles.card}>
             <h2>ZipZorpBeebleBorp</h2>
             <p>Exploring the memory subsystem of a OS.</p>

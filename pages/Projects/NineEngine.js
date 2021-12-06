@@ -23,18 +23,18 @@ export default function NineEngine() {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
-            <Header goBackLink="/projects">
+            <Header goBackLink="/Projects">
                 <Link href="/" passHref>
                     <div className={styles.subpageButton}>
                         <p>Home</p>
                     </div>
                 </Link>
-                <Link href="/contact" passHref>
+                <Link href="/Contact" passHref>
                     <div className={styles.subpageButton}>
                         <p>Contact Me</p>
                     </div>
                 </Link>
-                <Link href="/aboutme" passHref>
+                <Link href="/AboutMe" passHref>
                     <div className={styles.subpageButton}>
                         <p>About Me</p>
                     </div>

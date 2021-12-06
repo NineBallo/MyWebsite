@@ -24,12 +24,12 @@ export default function ContactMe() {
             <p>Main</p>
           </div>
         </Link>
-        <Link href="/projects">
+        <Link href="/Projects">
           <div className={styles.subpageButton}>
             <p>Projects</p>
           </div>
         </Link>
-        <Link href="/aboutme">
+        <Link href="/AboutMe">
           <div className={styles.subpageButton}>
             <p>About Me</p>
           </div>

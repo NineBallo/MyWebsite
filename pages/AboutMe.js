@@ -28,12 +28,12 @@ export default function AboutMe() {
                         <p>Main</p>
                     </div>
                 </Link>
-                <Link href="/contact">
+                <Link href="/Contact">
                     <div className={styles.subpageButton}>
                         <p>Contact Me</p>
                     </div>
                 </Link>
-                <Link href="/projects">
+                <Link href="/Projects">
                     <div className={styles.subpageButton}>
                         <p>My Projects</p>
                     </div>
