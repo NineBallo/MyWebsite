@@ -1,12 +1,16 @@
-
 import React, { useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
-import pStyles from "../styles/Projects.module.css";
+import styles from "../styles/Carousel.module.css";
+import Image from "next/image";
+import showcase1 from "../public/engine2.png";
+
+import buttonNext from "../public/slideShowNext.png";
+import buttonPrev from "../public/slideShowBack.png";
 
 
 export function Slide({ children }) {
     return (
-        <div className={pStyles.slide}>
+        <div className={styles.slide}>
             {children}
         </div>
     )
@@ -14,7 +18,7 @@ export function Slide({ children }) {
 
 
   export function Carousel({ children }) {
-    const [emblaRef, emblaApi] = useEmblaCarousel({ speed: 10, loop: true });
+    const [emblaRef, emblaApi] = useEmblaCarousel({ speed: 5, loop: true });
 
     const scrollPrev = useCallback(() => {
       if (emblaApi) emblaApi.scrollPrev();
@@ -24,15 +28,31 @@ export function Slide({ children }) {
     }, [emblaApi]);
 
       return (
-        <div className={pStyles.showcase}>
-        <div className={pStyles.embla} ref={emblaRef}>
-          <div className={pStyles.slideContainer}>
-              {children}
+          <div className={styles.showcaseWrapper}>
+            <div className={styles.showcase}>
+              <div className={styles.embla} ref={emblaRef}>
+                <div className={styles.slideContainer}>
+                  {children}
+                </div>
+              </div>
+         </div>
+
+
+            <button className={styles.slideButton_prev} onClick={scrollPrev}>
+              <Image
+                  src={buttonPrev}
+                  alt="Prev"
+                  placeholder="blur"
+                  layout="responsive"/>
+            </button>
+            <button className={styles.slideButton_next} onClick={scrollNext}>
+              <Image
+                  src={buttonNext}
+                  alt="Next"
+                  placeholder="blur"
+                  layout="responsive"/>
+            </button>
           </div>
-        </div>
-        <button className={pStyles.slideButton_prev} onClick={scrollPrev} />
-        <button className={pStyles.slideButton_next} onClick={scrollNext} />
-      </div>
       )
   }
   

@@ -1,0 +1,47 @@
+.infoChild {
+    border: 3px solid #c0c0c0;
+    background-color: #212121;
+    min-width: 20vw;
+    max-width: 30vw;
+
+    max-height: 300px;
+
+    padding: 2%;
+    margin: 1%;
+}
+
+.infoChild b {
+    font-size: 140%;
+}
+
+.infoChild p {
+    font-size: 100%;
+    display: inline-block;
+}
+
+.infoParent {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 70vw;
+    height: fit-content;
+    justify-content: center;
+}
+
+
+
+/*MOBILE */
+@media (max-width: 900px) {
+    .infoParent {
+        display: block;
+    }
+    .infoChild {
+        margin: auto;
+        margin-bottom: 2vh;
+        max-width: 100%;
+        width: 100%;
+    }
+}

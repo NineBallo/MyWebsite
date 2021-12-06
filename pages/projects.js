@@ -2,6 +2,7 @@ import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import Head from "next/head";
 import pStyles from "../styles/Projects.module.css";
+import {Header} from "../components/Header";
 
 export default function Projects() {
   return (
@@ -21,31 +22,26 @@ export default function Projects() {
         />
       </Head>
 
+      <Header goBackLink="/">
+        <Link href="/volunteer">
+          <div className={styles.subpageButton}>
+            <p>Volunteer work</p>
+          </div>
+        </Link>
+        <Link href="/contact">
+          <div className={styles.subpageButton}>
+            <p>Contact Me</p>
+          </div>
+        </Link>
+        <Link href="/aboutme">
+          <div className={styles.subpageButton}>
+            <p>About Me</p>
+          </div>
+        </Link>
+      </Header>
+
+      <div className={pStyles.titleSpacer}/>
       <h1 className={styles.title}>My Projects</h1>
-
-      <header className={styles.subpageHeader}>
-        <div className={styles.headerNameBox}>
-          <h2 className={styles.subpageName}>NineBall</h2>
-        </div>
-
-        <div className={styles.headerButtonBox}>
-          <Link href="/">
-            <div className={styles.subpageButton}>
-              <p>Main</p>
-            </div>
-          </Link>
-          <Link href="/contact">
-            <div className={styles.subpageButton}>
-              <p>Contact Me</p>
-            </div>
-          </Link>
-          <Link href="/aboutme">
-            <div className={styles.subpageButton}>
-              <p>About Me</p>
-            </div>
-          </Link>
-        </div>
-      </header>
 
       <div className={styles.grid}>
         <Link href={"/projects/NineEngine"}>

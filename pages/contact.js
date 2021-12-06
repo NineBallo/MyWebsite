@@ -1,6 +1,8 @@
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import Head from "next/head";
+import pStyles from "../styles/Projects.module.css";
+import {Header} from "../components/Header";
 
 export default function ContactMe() {
   return (
@@ -16,30 +18,25 @@ export default function ContactMe() {
           crossOrigin=""
         />
       </Head>
+      <Header>
+        <Link href="/">
+          <div className={styles.subpageButton}>
+            <p>Main</p>
+          </div>
+        </Link>
+        <Link href="/projects">
+          <div className={styles.subpageButton}>
+            <p>Projects</p>
+          </div>
+        </Link>
+        <Link href="/aboutme">
+          <div className={styles.subpageButton}>
+            <p>About Me</p>
+          </div>
+        </Link>
+      </Header>
 
-      <header className={styles.subpageHeader}>
-        <div className={styles.headerNameBox}>
-          <h2 className={styles.subpageName}>NineBall</h2>
-        </div>
-        <div className={styles.headerButtonBox}>
-          <Link href="/">
-            <div className={styles.subpageButton}>
-              <p>Main</p>
-            </div>
-          </Link>
-          <Link href="/projects">
-            <div className={styles.subpageButton}>
-              <p>Projects</p>
-            </div>
-          </Link>
-          <Link href="/aboutme">
-            <div className={styles.subpageButton}>
-              <p>About Me</p>
-            </div>
-          </Link>
-        </div>
-      </header>
-
+      <div className={pStyles.titleSpacer}/>
       <h1 className={styles.title}>Contact Me!</h1>
 
       <div className={styles.grid}>
