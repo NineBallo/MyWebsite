@@ -50,19 +50,17 @@ export default function Projects() {
         <ProjectCard
         link={"/Projects/NineEngine"}
         title={"NineEngine"}
-        desc={"A simple vulkan renderer as a intro to graphics programming."}
+        desc={"A \"simple\" Vulkan renderer as a intro to graphics programming."}
         />
-
         <ProjectCard
             link={"/Projects/ZipZorpBeebleBorp"}
             title={"ZipZorpBeebleBorp"}
             desc={"Exploring the memory subsystem of a OS."}
         />
-
         <ProjectCard
             link={"/Projects/Solamanders"}
             title={"Solamanders"}
-            desc={"A commissioned NFT project with dynamic genetic traits."}
+            desc={"A commissioned NFT project I worked on with genetic traits and family trees."}
         />
 
       </div>

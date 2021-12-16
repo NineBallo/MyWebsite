@@ -36,33 +36,38 @@ export function Carousel(props) {
         style.cursor = "initial";
     }
     return (
-        <a href={link} style={style} target="_blank">
-            <div className={styles.showcaseWrapper}>
-                <div className={styles.showcase}>
-                    <div className={styles.embla} ref={emblaRef}>
-                        <div className={styles.slideContainer}>
-                            {props.children}
+        <div className={styles.carousel}>
+            <a href={link} style={style} target="_blank">
+                <div className={styles.showcaseWrapper}>
+                    <div className={styles.showcase}>
+                        <div className={styles.embla} ref={emblaRef}>
+                            <div className={styles.slideContainer}>
+                                {props.children}
+                            </div>
                         </div>
                     </div>
                 </div>
+            </a>
+
+            <button className={styles.slideButton_prev} onClick={scrollPrev}>
+                <Image
+                    src={buttonPrev}
+                    alt="Prev"
+                    placeholder="blur"
+                    layout="responsive"/>
+            </button>
+            <button className={styles.slideButton_next} onClick={scrollNext}>
+                <Image
+                    src={buttonNext}
+                    alt="Next"
+                    placeholder="blur"
+                    layout="responsive"/>
+            </button>
+
+        </div>
 
 
-                <button className={styles.slideButton_prev} onClick={scrollPrev}>
-                    <Image
-                        src={buttonPrev}
-                        alt="Prev"
-                        placeholder="blur"
-                        layout="responsive"/>
-                </button>
-                <button className={styles.slideButton_next} onClick={scrollNext}>
-                    <Image
-                        src={buttonNext}
-                        alt="Next"
-                        placeholder="blur"
-                        layout="responsive"/>
-                </button>
-            </div>
-        </a>
+
     )
 }
   
