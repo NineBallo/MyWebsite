@@ -3,6 +3,7 @@ import Link from "next/link";
 import Head from "next/head";
 import pStyles from "../styles/Projects.module.css";
 import {Header} from "../components/Header";
+import {ContactCard} from "../components/TextBox";
 
 export default function ContactMe() {
   return (
@@ -19,9 +20,9 @@ export default function ContactMe() {
         />
       </Head>
       <Header>
-        <Link href="/">
+        <Link href="/Volunteer">
           <div className={styles.subpageButton}>
-            <p>Main</p>
+            <p>Volunteer Work</p>
           </div>
         </Link>
         <Link href="/Projects">
@@ -39,39 +40,30 @@ export default function ContactMe() {
       <div className={pStyles.titleSpacer}/>
       <h1 className={styles.title}>Contact Me!</h1>
 
+
+
+
       <div className={styles.grid}>
-        <Link href={"mailto:NineBallCode@gmail.com"}>
-          <div className={styles.card}>
-            <h2>Mail</h2>
-            <p>For any general or formal contacts this is be best.</p>
-          </div>
-        </Link>
-
-        <Link href={"https://discord.com/users/279088726955655184"}>
-          <div className={styles.card}>
-            <h2>Discord</h2>
-            <p>For any quick informal requests this is the best.</p>
-          </div>
-        </Link>
-
-        <Link href={"https://github.com/NineBallo"}>
-          <div className={styles.card}>
-            <h2>GitHub</h2>
-            <p>
-              To view the current state of my projects this is where they will
-              be.
-            </p>
-          </div>
-        </Link>
-
-        <Link href={"https://steamcommunity.com/id/NineBallo/"}>
-          <div className={styles.card}>
-            <h2>Steam</h2>
-            <p>
-              This is where I go to unwind, if you wish to play just add me.
-            </p>
-          </div>
-        </Link>
+        <ContactCard
+            link={"mailto:NineBallCode@gmail.com"}
+            title={"Mail"}
+            desc={"For any general or formal contacts this is be best."}
+        />
+        <ContactCard
+            link={"https://discord.com/users/279088726955655184"}
+            title={"Discord"}
+            desc={"For any quick informal requests this is the best."}
+        />
+        <ContactCard
+            link={"https://github.com/NineBallo"}
+            title={"GitHub"}
+            desc={"To view the current state of my projects this is where they will be."}
+        />
+        <ContactCard
+            link={"https://steamcommunity.com/id/NineBallo/"}
+            title={"Steam"}
+            desc={"This is where I go to unwind, if you wish to play just add me."}
+        />
       </div>
 
       <footer>

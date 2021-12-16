@@ -1,8 +1,11 @@
-import styles from "../styles/TextBoxes.module.css";
-import Image from "next/image";
-import showcase1 from "../public/engine2.png";
-import showcase2 from "../public/engine4.png";
+import {useEffect, useState} from 'react';
 
+import styles from "../styles/TextBoxes.module.css";
+import HStyles from "../styles/Home.module.css";
+
+import Image from "next/image";
+import * as _ from "underscore";
+import Link from "next/link";
 
 export function InfoParent({ children }) {
 
@@ -13,11 +16,12 @@ export function InfoParent({ children }) {
     )
 }
 
-export function InfoChild({ children }) {
+export function InfoChild(props) {
 
     return(
         <div className={styles.infoChild}>
-            {children}
+            <b>{props.title}</b>
+            <p>{props.desc}</p>
         </div>
     )
 }
@@ -33,17 +37,20 @@ export function SnakeBoxParent({ children }) {
 }
 
 
-function SnakeImage(img) {
+function SnakeImage(img, link) {
 
     return (
-        <div className={styles.snakeImg}>
-            <Image
-                src={img}
-                alt="Snake Box"
-                placeholder="blur"
-                layout="responsive"
-            />
-        </div>
+        <a href={link} target="_blank">
+            <div className={styles.snakeImg}>
+                <Image
+                    src={img}
+                    alt="Snake Box"
+                    placeholder="blur"
+                    layout="responsive"
+                />
+            </div>
+        </a>
+
     )
 }
 
@@ -56,27 +63,43 @@ function SnakeText(text) {
 }
 
 export function SnakeBoxChild(props) {
-    let style = {}
-    let layout1;
-    let layout2;
-
-    if(props.type === "even") {
-        style.borderLeft = "1px solid white"
-
-        layout1 = SnakeImage(props.img);
-        layout2 = SnakeText(props.txt);
-
-    } else {
-        style.borderRight = "1px solid white"
-        layout1 = SnakeText(props.txt);
-        layout2 = SnakeImage(props.img);
-    }
-
     return(
-        <div className={styles.snakeChild} style={style}>
-            {layout1}
-            <div className={styles.snakeSpacer}/>
-            {layout2}
+        <div className={styles.snakeChild}>
+            {SnakeImage(props.img, props.link)}
+            <div className={styles.snakeSpacer} />
+            {SnakeText(props.txt)}
         </div>
+    )
+}
+
+
+export function ProjectCard(props) {
+    return(
+        // eslint-disable-next-line @next/next/link-passhref
+        <Link href={props.link}>
+            <div className={HStyles.card}>
+                <h2>{props.title}</h2>
+                <p>{props.desc}</p>
+            </div>
+        </Link>
+    )
+}
+
+export function ContactCard(props) {
+    let link = undefined;
+    let style = {};
+    if (props.link) {
+        link = props.link;
+        style.cursor = "pointer";
+    } else {
+        style.cursor = "initial";
+    }
+    return (
+
+    <a className={HStyles.card} href={link} style={style} target="_blank">
+        <h2>{props.title}</h2>
+        <p>{props.desc}</p>
+    </a>
+
     )
 }

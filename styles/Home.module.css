@@ -240,11 +240,6 @@
   border-radius: 10px;
 }
 
-.headerNameBox h1 {
-  clear: both;
-  float: left;
-}
-
 .subpageTitle {
   font-size: 34px;
   font-weight: lighter;
@@ -359,6 +354,22 @@
   .headerButtonBox {
     padding: 0;
     margin: 0
+  }
+}
+
+@media (max-width: 500px) {
+  .headerSpacer {
+    display: none;
+  }
+  .subpageButton {
+    flex-grow: 1;
+    text-align: center;
+  }
+  .headerNameBox {
+   border-right: 0;
+  }
+  .headerButtonBox {
+    flex-grow: 1;
   }
 }
 

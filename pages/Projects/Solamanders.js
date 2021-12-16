@@ -14,12 +14,12 @@ import {InfoChild, InfoParent} from "../../components/TextBox";
 import showcase1 from "../../public/engine2.png";
 import showcase2 from "../../public/engine4.png";
 
-export default function NineEngine() {
+export default function Solamanders() {
     return (
         <div className={styles.container}>
             <Head>
-                <title>NineEngine</title>
-                <meta name="description" content="My custom game engine and renderer"/>
+                <title>Solamanders</title>
+                <meta name="description" content="My first commission project"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
@@ -42,10 +42,10 @@ export default function NineEngine() {
             </Header>
 
             <div className={pStyles.titleSpacer}/>
-            <h1 className={styles.title}>NineEngine</h1>
+            <h1 className={styles.title}>Solamanders</h1>
 
 
-            <Carousel link={"https://github.com/NineBallo/NineEngine"}>
+            <Carousel link={"https://solamanders.com/"}>
                 <Slide>
                     <div className={cStyles.image}>
                         <Image
@@ -70,32 +70,35 @@ export default function NineEngine() {
 
             <InfoParent>
                 <InfoChild
+                    title={"The Who?"}
+                    desc={"    The main team consists of 5 people, I was one of the first outside of that group brought onto" +
+                    " the project by one of the main devs and friend to help get the project off the ground."}
+                />
+                <InfoChild
+                    title={"The What?"}
+                    desc={"    It is a project consisting of three releases, the first being 10000 randomly generated NFT" +
+                    " salamanders, these salamanders with the help of another drop of NFT \"Terrarium Tanks\" allowed" +
+                    " people to breed those initial 10000 into other \"Gen 2\" Solamanders."}
+                />
 
-                    title={"Vulkan API"}
-                    desc={"I wanted to learn the Vulkan API so\n" +
-                    "I created this project to learn it. So far I have created a simple\n" +
-                    "renderer and learned not just vulkan but techniques for\n" +
-                    "graphics and UI programming as a whole."}
+                <InfoChild
+                    title={"The Why?"}
+                    desc={"    I had wanted to learn how blockchain applications were programmed and how the ecosystem " +
+                    "functioned, I had been planning to dip my toes into it and once I was offered to work on this " +
+                    "project I took the opportunity to learn how everything works."}
                 />
                 <InfoChild
-                    title={"GUI"}
-                    desc={"I have implemented a IMGUI system for managing\n" +
-                    "entity's loaded into the Entity Component System.\n" +
-                    "Eventually I want to theme and integrate it better into the renderers internals."}
+                    title={"Genetics"}
+                    desc={"    I helped create and implement the algorithm for breeding that allows traits to be passed down " +
+                    "genetically based on a set of factors. This system gives people control over their 'manders and lets " +
+                    "them have the highest change of getting exactly what they want."}
                 />
                 <InfoChild
 
-                    title={"Plans"}
-                    desc={"I plan on using this as a entrance project not only into more advanced graphics programming " +
-                          "but also into things such as physics and sound programming."}
-                />
-                <InfoChild
-                    title={"Goals"}
-                    desc={"My goals are to learn as much as I can from it" +
-                          "and apply those techniques to other projects im working on." +
-                          "I hope however to achieve some level of realistic lighting and a basic" +
-                          "implementation of physics."}
-                />
+                title={"Solana"}
+                desc={"This project was built on the Solana blockchain and therefor carries many of the benefits of that; " +
+                "such as the low transaction fees, quick transaction speeds, and a relatively nice dev environment/community."}
+            />
             </InfoParent>
 
 

@@ -3,6 +3,8 @@ import Link from "next/link";
 import Head from "next/head";
 import pStyles from "../styles/Projects.module.css";
 import {Header} from "../components/Header";
+import {ProjectCard} from "../components/TextBox";
+
 
 export default function Projects() {
   return (
@@ -44,24 +46,25 @@ export default function Projects() {
       <h1 className={styles.title}>My Projects</h1>
 
       <div className={styles.grid}>
-        <Link href={"/Projects/NineEngine"}>
-          <div className={styles.card}>
-            <h2>NineEngine</h2>
-            <p>A simple vulkan renderer as a intro to graphics programming.</p>
-          </div>
-        </Link>
 
-        <Link href={"/Projects/ZipZorpBeebleBorp"}>
-          <div className={styles.card}>
-            <h2>ZipZorpBeebleBorp</h2>
-            <p>Exploring the memory subsystem of a OS.</p>
-          </div>
-        </Link>
+        <ProjectCard
+        link={"/Projects/NineEngine"}
+        title={"NineEngine"}
+        desc={"A simple vulkan renderer as a intro to graphics programming."}
+        />
 
-        <div className={styles.card}>
-          <h2>NineBall.wtf</h2>
-          <p>My old website</p>
-        </div>
+        <ProjectCard
+            link={"/Projects/ZipZorpBeebleBorp"}
+            title={"ZipZorpBeebleBorp"}
+            desc={"Exploring the memory subsystem of a OS."}
+        />
+
+        <ProjectCard
+            link={"/Projects/Solamanders"}
+            title={"Solamanders"}
+            desc={"A commissioned NFT project with dynamic genetic traits."}
+        />
+
       </div>
     </div>
   );
