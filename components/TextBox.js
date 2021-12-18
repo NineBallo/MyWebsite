@@ -1,10 +1,7 @@
-import {useEffect, useState} from 'react';
-
 import styles from "../styles/TextBoxes.module.css";
 import HStyles from "../styles/Home.module.css";
 
 import Image from "next/image";
-import * as _ from "underscore";
 import Link from "next/link";
 
 export function InfoParent({ children }) {

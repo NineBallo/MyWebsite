@@ -1,4 +1,7 @@
-import React, {useCallback} from "react";
+import {useCallback, useEffect, useState} from "react";
+import * as _ from "underscore";
+
+
 import useEmblaCarousel from "embla-carousel-react";
 import styles from "../styles/Carousel.module.css";
 import Image from "next/image";
@@ -15,6 +18,23 @@ export function Slide({children}) {
     )
 }
 
+//in px
+let carouselHeight = 300;
+
+function updateTranslate(pix) {
+    carouselHeight = pix;
+    console.log("Updated:" + pix)
+}
+
+function calcHeight() {
+    const rect = this.Wrapper.getBoundingClientRect();
+
+    return rect.height;
+}
+
+function componentDidMount() {
+    window.addEventListener('resize', this.calcHeight());
+}
 
 export function Carousel(props) {
     const [emblaRef, emblaApi] = useEmblaCarousel({speed: 5, loop: true});
@@ -35,39 +55,45 @@ export function Carousel(props) {
     } else {
         style.cursor = "initial";
     }
+
+    let buttonTranslate = (carouselHeight / 2)
+    let buttonStyle = {};
+    buttonStyle.transform = `translate:translateY(${buttonTranslate}px)`
+    console.log(buttonTranslate)
+
     return (
         <div className={styles.carousel}>
-            <a href={link} style={style} target="_blank">
                 <div className={styles.showcaseWrapper}>
                     <div className={styles.showcase}>
                         <div className={styles.embla} ref={emblaRef}>
-                            <div className={styles.slideContainer}>
+                            <a className={styles.slideContainer} href={link} style={style} target="_blank">
                                 {props.children}
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </a>
 
-            <button className={styles.slideButton_prev} onClick={scrollPrev}>
-                <Image
-                    src={buttonPrev}
-                    alt="Prev"
-                    placeholder="blur"
-                    layout="responsive"/>
-            </button>
-            <button className={styles.slideButton_next} onClick={scrollNext}>
-                <Image
-                    src={buttonNext}
-                    alt="Next"
-                    placeholder="blur"
-                    layout="responsive"/>
-            </button>
+
+
+                <button className={styles.slideButton_prev} onClick={scrollPrev}>
+                    <Image
+                        src={buttonPrev}
+                        alt="Prev"
+                        placeholder="blur"
+                        layout="responsive"/>
+                </button>
+
+
+                <button className={styles.slideButton_next} onClick={scrollNext}>
+                    <Image
+                        src={buttonNext}
+                        alt="Next"
+                        placeholder="blur"
+                        layout="responsive"/>
+                </button>
+
 
         </div>
-
-
-
     )
 }
   
