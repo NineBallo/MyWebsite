@@ -52,17 +52,17 @@ export default function ContactMe() {
         <ContactCard
             link={"https://discord.com/users/279088726955655184"}
             title={"Discord"}
-            desc={"For any quick informal requests this is the best."}
+            desc={"For any quick informal requests this is the fastest way to get to me."}
         />
         <ContactCard
             link={"https://github.com/NineBallo"}
             title={"GitHub"}
-            desc={"To view the current state of my projects this is where they will be."}
+            desc={"To view the current state of my public projects this is where they will be."}
         />
         <ContactCard
             link={"https://steamcommunity.com/id/NineBallo/"}
             title={"Steam"}
-            desc={"This is where I go to unwind, if you wish to play just add me."}
+            desc={"This is where I go to unwind, if you wish to hang out just add me."}
         />
       </div>
 

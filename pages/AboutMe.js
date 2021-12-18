@@ -47,31 +47,31 @@ export default function AboutMe() {
             <InfoParent>
                 <InfoChild
                     title={"Who am I?"}
-                    desc={"Im a self taught high-school student who likes to code. I first started when I was 12 with Python" +
-                    " and a hacked chromebook running linux. Ever since then my desire to learn has been unfazed and" +
-                    " Ive been continuing to move onto more advanced topics one after the other."}
+                    desc={"Im a self taught high-school student who likes to code. I first started when I was 12, on a" +
+                        "hacked chromebook running linux. Ever since then my desire to learn has continued to grow and" +
+                        " Ive been continuing to move onto more advanced topics one after the other."}
                 />
                 <InfoChild
                     title={"Why do I code?"}
                     desc={"I like to learn how things work and computers are such a broad and complicated topic." +
-                    " Once I started coding I was hooked, it was a never ending rabbit-hole of new stuff to learn." +
-                    " Eventually it lead to me saving up to buy a proper computer and from there I set out to learn" +
-                    " every field I could."}
+                        " Once I started coding I was hooked, it was a never ending rabbit-hole of new stuff to feed my curiosity." +
+                        " Eventually I saved up enough to buy a proper computer, and from there I set out to learn even more" +
+                        " advanced topics ranging from hacking to computer graphics."}
                 />
                 <InfoChild
                     title={"What do I know now?"}
-                    desc={"My language of choice is C++ however I also have learned JavaScript, Python, and some rust. " +
-                    "Ive also spent time studying Vulkan, Docker, Next.js, and how the general memory subsystem of a computer works. " +
-                    "As far as platforms go ive been using linux since I was 12, and understand the majority of it " +
-                    "quite well."}
+                    desc={"My language of choice is C++ however I also have learned JavaScript, Python, and some Rust. " +
+                        "Ive also spent time studying Vulkan, Docker, Next.js, and how the general memory subsystem of a computer works. " +
+                        "As far as platforms go ive been using linux since I was 12, and understand the majority of it " +
+                        "quite well."}
                 />
                 <InfoChild
-                title={"Where do I plan to go from here?"}
-                desc={"I have a long bucketlist but my focus right now is learning the more advanced math behind" +
-                " physically based lighting, sound, and physics. Eventually I also want to try learning" +
-                " penetration testing again, and learn how to better reverse engineer programs because" +
-                " understanding how to protect a server from malicious actors as well my code I believe" +
-                " is an important skill to have."}
+                    title={"Where do I plan to go from here?"}
+                    desc={"I have a long bucketlist but my focus right now is learning the more advanced math behind" +
+                        " physically based lighting, sound, and physics. Eventually, I want to learn " +
+                        " penetration testing, as well as dive deeper into assembly and the reverse engineering of programs." +
+                        " I would also like to understand how compilation works at a lower level and use this knowledge to help" +
+                        " protect servers and applications from malicious actors."}
                 />
 
             </InfoParent>

@@ -60,7 +60,7 @@ export default function Projects() {
         <ProjectCard
             link={"/Projects/Solamanders"}
             title={"Solamanders"}
-            desc={"A commissioned NFT project I worked on with genetic traits and family trees."}
+            desc={"A commissioned NFT project I worked on. Implements basic genetics, and family trees."}
         />
 
       </div>

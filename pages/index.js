@@ -50,7 +50,7 @@ export default function Home() {
 
           <Link href="/Volunteer">
             <div className={styles.card}>
-              <b style={{fontSize: "120%"}}>Volunteer Work and "Open-Source" contributions</b>
+              <b style={{fontSize: "120%"}}>Volunteer Work and Open-Source contributions</b>
               <p style={{fontSize: "100%"}}>
                 Here you can find some of the time I've contributed to the
                 community.

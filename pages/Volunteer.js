@@ -3,10 +3,7 @@ import Link from "next/link";
 import Head from "next/head";
 import pStyles from "../styles/Projects.module.css";
 import {Header} from "../components/Header";
-
 import {SnakeBoxChild, SnakeBoxParent} from "../components/TextBox";
-
-import Image from "next/image";
 
 
 import Pince from "../public/Volunteer/Pince.png";
@@ -21,9 +18,9 @@ export default function Volunteer() {
                 <title>Volunteer Work</title>
                 <meta
                     name="description"
-                    content="A list of my currently public projects"
+                    content="Some of the time ive dedicated to the community"
                 />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/favicon.ico"/>
                 <link
                     rel="preload"
                     href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
@@ -59,42 +56,38 @@ export default function Volunteer() {
                 <SnakeBoxChild
                     img={SlamBKB}
                     link={"http://www.stalbertslam.com/"}
-                    txt={"SLAM is a community basketball league that works to create a fun environment where " +
-                    "new players can get into the sport. I'm currently volunteering for St. Albert SLAM as an assistant" +
-                    " coach."}
+                    txt={"SLAM is a community basketball league that works to create a fun environment where" +
+                        " new players can get into the sport. I'm currently volunteering for St.Albert SLAM as an Assistant" +
+                        " Coach."}
                 />
 
                 <SnakeBoxChild
                     link={"https://stalbert.ca/exp/childfest/"}
                     img={Fest}
                     txt={"I've volunteered to help run the Children's Festival. The Children's Festival is a event that the city of St. Albert holds in order to engage kids in the arts and " +
-                    "help bring the community together."}
+                        "help bring the community together."}
                 />
 
                 <SnakeBoxChild
                     link={"https://gitlab.com/CalcProgrammer1/OpenRGB"}
                     img={OpenRGB}
                     txt={"OpenRGB is a open-source, cross-platform way of combining " +
-                    "all the silly proprietary RGB programs into one. For this I added support for my mouse: The Logitech G403 Hero." +
-                    " This while a small contribution was my first contribution to any open source software."}
+                        "all the silly proprietary RGB programs into one. For this I added support for my mouse: The Logitech G403 Hero." +
+                        " This while a small contribution was my first ever contribution to any open-source software."}
                 />
 
                 <SnakeBoxChild
                     link={"https://github.com/korcankaraokcu/PINCE"}
                     img={Pince}
                     txt={"PINCE is a program most comparable to Cheat Engine on Windows. " +
-                    "It allows for the initial debugging when reversing a running local application. " +
-                    "I contributed code allowing it to freeze values as well as add some QOL improvements, " +
-                    "such as a progress bar and multithreading."}
+                        "It allows for the initial debugging when reversing a running local application. " +
+                        "I contributed code implementing a few things on the roadmap, such as allowing it to freeze" +
+                        " values as well as adding some QOL improvements such as a progress bar and multithreading" +
+                        "so the UI thread is not blocked."}
                 />
 
 
-
-
             </SnakeBoxParent>
-
-
-
 
 
         </div>
