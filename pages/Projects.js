@@ -10,12 +10,12 @@ export default function Projects() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>NineBall's Projects!</title>
+        <title>My Projects!</title>
         <meta
           name="description"
           content="A list of my currently public projects"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logoTS.png" />
         <link
           rel="preload"
           href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
@@ -64,6 +64,11 @@ export default function Projects() {
         />
 
       </div>
+        <footer className={styles.bottomFooter}>
+            <Link href="https://github.com/NineBallo/MyWebsite">
+                <h4 className={styles.footerLink}>Made by ME!</h4>
+            </Link>
+        </footer>
     </div>
   );
 }

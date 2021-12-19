@@ -53,6 +53,7 @@ export default function NineEngine() {
                             alt="Le engio"
                             placeholder="blur"
                             layout="responsive"
+                            priority={true}
                         />
                     </div>
                 </Slide>

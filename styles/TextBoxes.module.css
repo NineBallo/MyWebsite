@@ -38,8 +38,9 @@
 }
 
 .snakeChild {
-    height: 500px;
-    width: 95vw;
+    max-height: 500px;
+
+    width: 1200px;
     display: flex;
     align-items: stretch;
 
@@ -48,7 +49,7 @@
     margin-bottom: 40px;
     align-content: center;
 
-    max-width: 1400px;
+    max-width: 1100px;
 }
 .snakeChild:nth-child(odd) {
     flex-direction: row;
@@ -63,15 +64,14 @@
     height: 400px;
     flex-grow: 0;
 
-    margin-bottom: 90px;
+    margin-bottom: 10px;
     padding: 15px;
 
     cursor: pointer;
 }
 
 .snakeSpacer {
-    width: 20%;
-    height: 100%;
+    width: 5%;
     flex-grow: 1;
 }
 
@@ -120,48 +120,42 @@
     line-height: 1.5;
 }
 
-/*MOBILE */
-@media (max-width: 900px) {
-    .infoParent {
-        display: block;
-    }
-    .infoChild {
-        margin: auto;
-        margin-bottom: 2vh;
-        max-width: 100%;
-        width: 100%;
-    }
-}
+
 
 /*MOBILE */
-@media (max-width: 1200px) {
+@media (max-width: 1150px) {
     .snakeChild,
     .snakeChild:nth-child(even),
     .snakeChild:nth-child(odd) {
+        max-width: 75vw;
         flex-direction: column;
         border: 1px solid white;
         margin-bottom: 40px;
         align-content: center;
-        height: fit-content;
+        max-height: 1000px;
     }
 
     .snakeText {
         height: fit-content;
         flex-basis: 0;
-        padding-top: 0;
-        padding-bottom: 30px;
-        margin-left: 10%;
-        margin-right: 10%;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        margin-left: 1%;
+        margin-right: 1%;
     }
 
     .snakeSpacer {
-        height: 25px;
+        flex-basis: 10px;
+        height: 100px;
+        max-height: calc(80vh - 90%);
+        flex-grow: 1;
+        width: 100%;
     }
 
     .snakeImg {
-        max-width: 700px;
-        width: 90%;
-        height: fit-content;
+        aspect-ratio: 16/9;
+        width: 95%;
+        height: auto;
 
         flex-grow: 0;
         align-self: center;
@@ -180,6 +174,5 @@
     .card {
         max-width: 400px;
         width: 90%;
-
     }
 }

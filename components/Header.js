@@ -1,7 +1,10 @@
-import styles from "../styles/Home.module.css";
-import backArrow from "../public/backArrow.png";
 import Image from "next/image";
 import Link from "next/link";
+
+import styles from "../styles/Home.module.css";
+
+import backArrow from "../public/ArrowBack4.png";
+
 
 export function Header(props) {
     let link='/'
@@ -14,7 +17,6 @@ export function Header(props) {
                 <div className={styles.headerNameBox}>
                         <Image
                             src={backArrow}
-                            alt="Back"
                             layout="intrinsic"
                             priority={true}
                         />

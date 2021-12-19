@@ -66,11 +66,12 @@ export default function ContactMe() {
         />
       </div>
 
-      <footer>
-        <Link href="/">
-          <p>Back to main</p>
-        </Link>
-      </footer>
+
+        <footer>
+            <Link href="https://github.com/NineBallo/NewWebsite">
+                <h4 className={styles.footerLink}>Made by ME!</h4>
+            </Link>
+        </footer>
     </div>
   );
 }

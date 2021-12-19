@@ -24,8 +24,8 @@
 
     margin: auto;
 
-    padding: 0px;
-    top: 0px;
+    padding: 0;
+    top: 0;
     width: 75vw;
     height: fit-content;
     background-color: #18001d;
@@ -74,13 +74,14 @@
 
 
     width: 4%;
+    min-width: 29px;
 }
 
 .slideButton_next:before,
 .slideButton_prev:before {
     content: ' ';
     display: block;
-    height:4%;
+    height: 4%;
 }
 
 .slideButton_next {
@@ -102,5 +103,17 @@
 @media (max-width: 700px) {
     .showcase{
         width: 99%;
+    }
+    .slideButton_prev,
+    .slideButton_next {
+        width: 6%;
+    }
+
+    .slideButton_prev {
+        margin-right: 94%;
+        margin-left: 0;
+    }
+    .slideButton_next {
+        margin-left: 94%;
     }
 }

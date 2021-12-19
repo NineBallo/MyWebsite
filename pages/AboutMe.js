@@ -48,7 +48,7 @@ export default function AboutMe() {
                 <InfoChild
                     title={"Who am I?"}
                     desc={"Im a self taught high-school student who likes to code. I first started when I was 12, on a" +
-                        "hacked chromebook running linux. Ever since then my desire to learn has continued to grow and" +
+                        " hacked chromebook running linux. Ever since then my desire to learn has continued to grow and" +
                         " Ive been continuing to move onto more advanced topics one after the other."}
                 />
                 <InfoChild
@@ -71,7 +71,7 @@ export default function AboutMe() {
                         " physically based lighting, sound, and physics. Eventually, I want to learn " +
                         " penetration testing, as well as dive deeper into assembly and the reverse engineering of programs." +
                         " I would also like to understand how compilation works at a lower level and use this knowledge to help" +
-                        " protect servers and applications from malicious actors."}
+                        " protect servers and applications from malicious code."}
                 />
 
             </InfoParent>

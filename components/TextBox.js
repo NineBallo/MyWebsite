@@ -37,15 +37,13 @@ export function SnakeBoxParent({ children }) {
 function SnakeImage(img, link) {
 
     return (
-        <a href={link} target="_blank">
-            <div className={styles.snakeImg}>
-                <Image
-                    src={img}
-                    alt="Snake Box"
-                    placeholder="blur"
-                    layout="responsive"
-                />
-            </div>
+        <a href={link} target="_blank" className={styles.snakeImg}>
+            <Image
+                src={img}
+                alt="Snake Box"
+                placeholder="blur"
+                layout="responsive"
+            />
         </a>
 
     )

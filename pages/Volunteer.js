@@ -83,7 +83,7 @@ export default function Volunteer() {
                         "It allows for the initial debugging when reversing a running local application. " +
                         "I contributed code implementing a few things on the roadmap, such as allowing it to freeze" +
                         " values as well as adding some QOL improvements such as a progress bar and multithreading" +
-                        "so the UI thread is not blocked."}
+                        " so the UI thread is not blocked."}
                 />
 
 
