@@ -11,8 +11,8 @@ import {Header} from "../../components/Header";
 import {InfoChild, InfoParent} from "../../components/TextBox";
 
 
-import showcase1 from "../../public/engine2.png";
-import showcase2 from "../../public/engine4.png";
+import showcase1 from "../../public/Projects/NineEngine/engine2.png";
+import showcase2 from "../../public/Projects/NineEngine/engine4.png";
 
 export default function NineEngine() {
     return (
@@ -20,7 +20,7 @@ export default function NineEngine() {
             <Head>
                 <title>NineEngine</title>
                 <meta name="description" content="My custom game engine and renderer"/>
-                <link rel="icon" href="/favicon.ico"/>
+                <link rel="icon" href="/Assets/Site/logoTS.png"/>
             </Head>
 
             <Header goBackLink="/Projects">
@@ -54,6 +54,7 @@ export default function NineEngine() {
                             placeholder="blur"
                             layout="responsive"
                             priority={true}
+                            quality={90}
                         />
                     </div>
                 </Slide>
@@ -64,38 +65,40 @@ export default function NineEngine() {
                             alt="Le engio"
                             placeholder="blur"
                             layout="responsive"
+                            quality={90}
                         />
                     </div>
                 </Slide>
             </Carousel>
 
             <InfoParent>
-                <InfoChild
 
-                    title={"Vulkan API"}
-                    desc={"I wanted to learn the Vulkan API so\n" +
-                    "I created this project to learn it. So far I have created a simple\n" +
-                    "renderer and learned not just vulkan but techniques for\n" +
-                    "graphics and UI programming as a whole."}
+                <InfoChild
+                    title={"What is it?"}
+                    desc={"I wanted to learn the Vulkan API and introduce myself to graphics programming so" +
+                    " I created this project to learn it. So far I have created a simple" +
+                    " renderer and learned the basics to Vulkan; I've also learned techniques for structuring large " +
+                    " projects, and learned general graphics and UI programming techniques that I previously did not know."}
                 />
                 <InfoChild
-                    title={"GUI"}
-                    desc={"I have implemented a IMGUI system for managing\n" +
-                    "entity's loaded into the Entity Component System.\n" +
-                    "Eventually I want to theme and integrate it better into the renderers internals."}
+                    title={"Features"}
+                    desc={"I have implemented an IMGUI system for managing" +
+                    " entity's loaded into the Entity Component System." +
+                    " Eventually I want to theme and integrate it better into the renderers internals." +
+                    " I've also implemented the Vulkan API as the current graphics protocol so that I can better learn" +
+                    " the low-level workings of graphics programming."}
                 />
                 <InfoChild
-
                     title={"Plans"}
-                    desc={"I plan on using this as a entrance project not only into more advanced graphics programming " +
-                          "but also into things such as physics and sound programming."}
+                    desc={"I plan on using this as an entrance project not only into more advanced graphics programming" +
+                          " but also into things such as realistically simulated physics and sound."}
                 />
                 <InfoChild
                     title={"Goals"}
                     desc={"My goals are to learn as much as I can from it" +
-                          "and apply those techniques to other projects im working on." +
-                          "I hope however to achieve some level of realistic lighting and a basic" +
-                          "implementation of physics."}
+                          " and apply those techniques to other projects I'm working on." +
+                          " I hope however to achieve some level of realistic lighting and a basic" +
+                          " implementation of physics by the time I'm done with it."}
                 />
             </InfoParent>
 

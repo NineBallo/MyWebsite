@@ -49,10 +49,40 @@ function SnakeImage(img, link) {
     )
 }
 
-function SnakeText(text) {
-    return (
+///Probably a more efficent way to automate this but this is what we are going with
+function SnakeText(text, tag="", link="") {
+    let regEx = new RegExp(tag, "g")
+
+    let tagLength = tag.length;
+    let lastIdxEnd = 0;
+    let splitText=[]
+
+    let textSize = text.length;
+
+    for(let tagCount = text.match(regEx).length; tagCount >= 0; tagCount--) {
+
+        let startIDx = text.indexOf(tag, lastIdxEnd);
+
+        if(startIDx === -1) {
+            startIDx = textSize;
+        }
+
+        splitText.push(text.slice(lastIdxEnd, startIDx))
+
+        lastIdxEnd = startIDx + tagLength;
+    }
+
+    let output = [];
+    for(let i = 0; i < splitText.length; i++) {
+        output.push(<b key={`text${i}`}>{splitText[i]}</b>)
+        if(splitText.length-1 !== i) {
+            output.push(<a key={`tag${i}`}href={link} target="_blank">{tag}</a>)
+        }
+    }
+
+        return (
             <div className={styles.snakeText}>
-                <b>{text}</b>
+                {output}
             </div>
     )
 }
@@ -62,7 +92,7 @@ export function SnakeBoxChild(props) {
         <div className={styles.snakeChild}>
             {SnakeImage(props.img, props.link)}
             <div className={styles.snakeSpacer} />
-            {SnakeText(props.txt)}
+            {SnakeText(props.txt, props.tag, props.link)}
         </div>
     )
 }

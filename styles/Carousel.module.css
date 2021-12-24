@@ -72,16 +72,17 @@
     left: 0;
     text-align: center;
 
-
     width: 4%;
-    min-width: 29px;
+    min-width: 32px;
+    padding: 5px;
+    height: 90%;
 }
 
 .slideButton_next:before,
 .slideButton_prev:before {
     content: ' ';
     display: block;
-    height: 4%;
+    height: 15%;
 }
 
 .slideButton_next {
@@ -106,12 +107,14 @@
     }
     .slideButton_prev,
     .slideButton_next {
-        width: 6%;
+        width: 7%;
+        min-width: 0;
     }
 
     .slideButton_prev {
-        margin-right: 94%;
+        margin-right: 95%;
         margin-left: 0;
+        transform:translateX(-10%);
     }
     .slideButton_next {
         margin-left: 94%;

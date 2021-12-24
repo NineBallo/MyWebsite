@@ -17,17 +17,17 @@ header {
   height: 100%;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 p {
   color: #c0c0c0;
 }
 
 b {
   color: #c0c0c0;
+}
+
+a {
+  color: #c0c0c0;
+  text-decoration: underline;
 }
 
 h1 {

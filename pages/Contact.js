@@ -11,7 +11,7 @@ export default function ContactMe() {
       <Head>
         <title>Contact me!</title>
         <meta name="description" content="How to contact me" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/Assets/Site/logoTS.png" />
         <link
           rel="preload"
           href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"

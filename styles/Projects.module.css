@@ -4,6 +4,16 @@
     display: none;
 }
 
+.title {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 4rem;
+    margin-top: 1%;
+
+
+    display: flex;
+    align-content: flex-start;
+}
 
 /*MOBILE */
 @media (max-width: 1300px) {

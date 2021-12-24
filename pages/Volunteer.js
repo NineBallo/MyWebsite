@@ -20,7 +20,7 @@ export default function Volunteer() {
                     name="description"
                     content="Some of the time ive dedicated to the community"
                 />
-                <link rel="icon" href="/favicon.ico"/>
+                <link rel="icon" href="/Assets/Site/logoTS.png"/>
                 <link
                     rel="preload"
                     href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
@@ -59,31 +59,35 @@ export default function Volunteer() {
                     txt={"SLAM is a community basketball league that works to create a fun environment where" +
                         " new players can get into the sport. I'm currently volunteering for St.Albert SLAM as an Assistant" +
                         " Coach."}
+                    tag={"SLAM"}
                 />
 
                 <SnakeBoxChild
                     link={"https://stalbert.ca/exp/childfest/"}
                     img={Fest}
-                    txt={"I've volunteered to help run the Children's Festival. The Children's Festival is a event that the city of St. Albert holds in order to engage kids in the arts and " +
-                        "help bring the community together."}
+                    txt={"I've volunteered to help run the Children's Festival. The Children's Festival is a event that" +
+                    " the city of St.Albert holds in order to engage kids in the arts and help bring the community together."}
+                    tag={"Children's Festival"}
                 />
 
                 <SnakeBoxChild
                     link={"https://gitlab.com/CalcProgrammer1/OpenRGB"}
                     img={OpenRGB}
-                    txt={"OpenRGB is a open-source, cross-platform way of combining " +
-                        "all the silly proprietary RGB programs into one. For this I added support for my mouse: The Logitech G403 Hero." +
+                    txt={"OpenRGB is an open-source, cross-platform way of combining" +
+                        " all the silly proprietary RGB programs into one. For this I added support for my mouse: The Logitech G403 Hero." +
                         " This while a small contribution was my first ever contribution to any open-source software."}
+                    tag={"OpenRGB"}
                 />
 
                 <SnakeBoxChild
                     link={"https://github.com/korcankaraokcu/PINCE"}
                     img={Pince}
-                    txt={"PINCE is a program most comparable to Cheat Engine on Windows. " +
-                        "It allows for the initial debugging when reversing a running local application. " +
-                        "I contributed code implementing a few things on the roadmap, such as allowing it to freeze" +
+                    txt={"PINCE is a program most comparable to Cheat Engine on Windows." +
+                        " It allows for the initial debugging when reversing a running local application." +
+                        " I contributed code implementing a few things on the roadmap, such as allowing it to freeze" +
                         " values as well as adding some QOL improvements such as a progress bar and multithreading" +
-                        " so the UI thread is not blocked."}
+                        " so the UI thread and remains responsive during operations."}
+                    tag={"PINCE"}
                 />
 
 

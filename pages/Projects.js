@@ -1,10 +1,13 @@
-import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import Head from "next/head";
-import pStyles from "../styles/Projects.module.css";
+
+
 import {Header} from "../components/Header";
 import {ProjectCard} from "../components/TextBox";
 
+
+import styles from "../styles/Home.module.css";
+import pStyles from "../styles/Projects.module.css";
 
 export default function Projects() {
   return (
@@ -15,7 +18,7 @@ export default function Projects() {
           name="description"
           content="A list of my currently public projects"
         />
-        <link rel="icon" href="/logoTS.png" />
+        <link rel="icon" href="/Assets/Site/logoTS.png" />
         <link
           rel="preload"
           href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
@@ -53,8 +56,8 @@ export default function Projects() {
         desc={"A \"simple\" Vulkan renderer as a intro to graphics programming."}
         />
         <ProjectCard
-            link={"/Projects/ZipZorpBeebleBorp"}
-            title={"ZipZorpBeebleBorp"}
+            link={"/Projects/ZipZorpBeedleBorp"}
+            title={"ZipZorpBeedleBorp"}
             desc={"Exploring the memory subsystem of a OS."}
         />
         <ProjectCard

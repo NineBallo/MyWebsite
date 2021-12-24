@@ -151,7 +151,7 @@
     position: sticky;
     background-size: 1500px;
     background-repeat: repeat-x;
-    background-image: url("/Triangles2.png");
+    background-image: url("/Assets/Site/Triangles2.png");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,7 +190,7 @@
     /*margin-left: calc((70vw - (450px + 450px + 1.5rem))/2);*/
     margin: auto;
     padding: 10px;
-    min-width: 480px;
+    min-width: 490px;
 }
 
 .subpageHeader {
@@ -465,11 +465,31 @@
 
 }
 
+@media (max-width: 400px) {
+    .blackTSBoxTitle {
+        /*margin-left: calc((70vw - (450px + 450px + 1.5rem))/2);*/
+        margin: auto;
+        padding: 20px;
+
+        min-width: 250px;
+        max-width: 250px;
+
+        min-height: 160px;
+    }
+
+    .headerImg,
+    .headerOverlay {
+        min-height: 37vh;
+    }
+
+}
+
 
 @media (max-width: 360px) {
     .subpageButton {
         font-size: 150%;
     }
+
 }
 
 @media (max-width: 350px) {

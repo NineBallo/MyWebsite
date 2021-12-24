@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import styles from "../styles/Home.module.css";
 
-import backArrow from "../public/ArrowBack4.png";
+import backArrow from "../public/Assets/Header/ArrowBack4.png";
 
 
 export function Header(props) {
@@ -19,6 +19,7 @@ export function Header(props) {
                             src={backArrow}
                             layout="intrinsic"
                             priority={true}
+                            loading={"eager"}
                         />
                 </div>
             </Link>
