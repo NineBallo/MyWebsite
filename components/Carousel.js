@@ -44,7 +44,7 @@ export function Carousel(props) {
                 <div className={styles.showcaseWrapper}>
                     <div className={styles.showcase}>
                         <div className={styles.embla} ref={emblaRef}>
-                            <a className={styles.slideContainer} href={link} style={style} target="_blank">
+                            <a className={styles.slideContainer} href={link} style={style} target="_blank" rel="noopener noreferrer">
                                 {props.children}
                             </a>
                         </div>

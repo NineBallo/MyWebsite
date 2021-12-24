@@ -20,27 +20,20 @@ export default function Volunteer() {
                     name="description"
                     content="Some of the time ive dedicated to the community"
                 />
-                <link rel="icon" href="/Assets/Site/logoTS.png"/>
-                <link
-                    rel="preload"
-                    href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-                    as="font"
-                    crossOrigin=""
-                />
             </Head>
 
             <Header goBackLink="/">
-                <Link href="/Projects">
+                <Link href="/Projects" passHref>
                     <div className={styles.subpageButton}>
                         <p>Projects</p>
                     </div>
                 </Link>
-                <Link href="/Contact">
+                <Link href="/Contact" passHref>
                     <div className={styles.subpageButton}>
                         <p>Contact Me</p>
                     </div>
                 </Link>
-                <Link href="/AboutMe">
+                <Link href="/AboutMe" passHref>
                     <div className={styles.subpageButton}>
                         <p>About Me</p>
                     </div>

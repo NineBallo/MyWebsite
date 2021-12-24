@@ -37,7 +37,7 @@ export function SnakeBoxParent({ children }) {
 function SnakeImage(img, link) {
 
     return (
-        <a href={link} target="_blank" className={styles.snakeImg}>
+        <a href={link} target="_blank" rel="noopener noreferrer" className={styles.snakeImg}>
             <Image
                 src={img}
                 alt="Snake Box"
@@ -76,7 +76,7 @@ function SnakeText(text, tag="", link="") {
     for(let i = 0; i < splitText.length; i++) {
         output.push(<b key={`text${i}`}>{splitText[i]}</b>)
         if(splitText.length-1 !== i) {
-            output.push(<a key={`tag${i}`}href={link} target="_blank">{tag}</a>)
+            output.push(<a key={`tag${i}`} href={link} rel="noopener noreferrer" target="_blank" >{tag}</a>)
         }
     }
 
@@ -121,7 +121,7 @@ export function ContactCard(props) {
     }
     return (
 
-    <a className={HStyles.card} href={link} style={style} target="_blank">
+    <a className={HStyles.card} href={link} style={style} rel="noopener noreferrer" target="_blank">
         <h2>{props.title}</h2>
         <p>{props.desc}</p>
     </a>

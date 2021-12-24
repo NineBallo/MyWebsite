@@ -13,27 +13,20 @@ export default function AboutMe() {
             <Head>
                 <title>About me!</title>
                 <meta name="description" content="About me!"/>
-                <link rel="icon" href="/Assets/Site/logoTS.png"/>
-                <link
-                    rel="preload"
-                    href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-                    as="font"
-                    crossOrigin=""
-                />
             </Head>
 
             <Header>
-                <Link href="/Volunteer">
+                <Link href="/Volunteer" passHref>
                     <div className={styles.subpageButton}>
                         <p>Volunteer Work</p>
                     </div>
                 </Link>
-                <Link href="/Contact">
+                <Link href="/Contact" passHref>
                     <div className={styles.subpageButton}>
                         <p>Contact Me</p>
                     </div>
                 </Link>
-                <Link href="/Projects">
+                <Link href="/Projects" passHref>
                     <div className={styles.subpageButton}>
                         <p>My Projects</p>
                     </div>

@@ -20,6 +20,7 @@ export function Header(props) {
                             layout="intrinsic"
                             priority={true}
                             loading={"eager"}
+                            alt={"Go Back"}
                         />
                 </div>
             </Link>

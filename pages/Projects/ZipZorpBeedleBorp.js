@@ -54,6 +54,7 @@ export default function ZipZorpBeedleBorp() {
                             placeholder="blur"
                             layout="responsive"
                             quality={90}
+                            alt={""}
                         />
                     </div>
                 </Slide>
@@ -64,6 +65,7 @@ export default function ZipZorpBeedleBorp() {
                             placeholder="blur"
                             layout="responsive"
                             quality={90}
+                            alt={""}
                         />
                     </div>
                 </Slide>
@@ -74,6 +76,7 @@ export default function ZipZorpBeedleBorp() {
                         placeholder="blur"
                         layout="responsive"
                         quality={90}
+                        alt={""}
                     />
                 </div>
             </Slide>

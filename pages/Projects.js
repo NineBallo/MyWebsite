@@ -18,27 +18,20 @@ export default function Projects() {
           name="description"
           content="A list of my currently public projects"
         />
-        <link rel="icon" href="/Assets/Site/logoTS.png" />
-        <link
-          rel="preload"
-          href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-          as="font"
-          crossOrigin=""
-        />
       </Head>
 
       <Header goBackLink="/">
-        <Link href="/Volunteer">
+        <Link href="/Volunteer" passHref>
           <div className={styles.subpageButton}>
             <p>Volunteer Work</p>
           </div>
         </Link>
-        <Link href="/Contact">
+        <Link href="/Contact" passHref>
           <div className={styles.subpageButton}>
             <p>Contact Me</p>
           </div>
         </Link>
-        <Link href="/AboutMe">
+        <Link href="/AboutMe" passHref>
           <div className={styles.subpageButton}>
             <p>About Me</p>
           </div>
@@ -49,7 +42,6 @@ export default function Projects() {
       <h1 className={styles.title}>My Projects</h1>
 
       <div className={styles.grid}>
-
         <ProjectCard
         link={"/Projects/NineEngine"}
         title={"NineEngine"}
@@ -68,7 +60,7 @@ export default function Projects() {
 
       </div>
         <footer className={styles.bottomFooter}>
-            <Link href="https://github.com/NineBallo/MyWebsite">
+            <Link href="https://github.com/NineBallo/MyWebsite" passHref>
                 <h4 className={styles.footerLink}>Made by ME!</h4>
             </Link>
         </footer>

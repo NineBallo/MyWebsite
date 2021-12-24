@@ -11,26 +11,19 @@ export default function ContactMe() {
       <Head>
         <title>Contact me!</title>
         <meta name="description" content="How to contact me" />
-        <link rel="icon" href="/Assets/Site/logoTS.png" />
-        <link
-          rel="preload"
-          href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-          as="font"
-          crossOrigin=""
-        />
       </Head>
       <Header>
-        <Link href="/Volunteer">
+        <Link href="/Volunteer" passHref>
           <div className={styles.subpageButton}>
             <p>Volunteer Work</p>
           </div>
         </Link>
-        <Link href="/Projects">
+        <Link href="/Projects" passHref>
           <div className={styles.subpageButton}>
             <p>Projects</p>
           </div>
         </Link>
-        <Link href="/AboutMe">
+        <Link href="/AboutMe" passHref>
           <div className={styles.subpageButton}>
             <p>About Me</p>
           </div>
@@ -68,7 +61,7 @@ export default function ContactMe() {
 
 
         <footer>
-            <Link href="https://github.com/NineBallo/NewWebsite">
+            <Link href="https://github.com/NineBallo/NewWebsite" passHref>
                 <h4 className={styles.footerLink}>Made by ME!</h4>
             </Link>
         </footer>
