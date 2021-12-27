@@ -43,7 +43,7 @@ export default function ZipZorpBeedleBorp() {
             </Header>
 
             <div className={pStyles.titleSpacer}/>
-            <h1 className={styles.title}>ZipZorpBeebleBorp</h1>
+            <h1 className={pStyles.longTitle}>ZipZorpBeebleBorp</h1>
 
 
             <Carousel link={"https://github.com/NineBallo/ZipZorpBeedleBorp"}>

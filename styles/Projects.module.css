@@ -4,7 +4,8 @@
     display: none;
 }
 
-.title {
+.title,
+.longTitle {
     margin: 0;
     line-height: 1.15;
     font-size: 4rem;
@@ -19,5 +20,12 @@
 @media (max-width: 1300px) {
     .titleSpacer {
         display: block;
+    }
+}
+
+/*LongTitle is the same as title but will resize more aggressively*/
+@media (max-width: 400px) {
+    .longTitle {
+        font-size: 35px;
     }
 }
