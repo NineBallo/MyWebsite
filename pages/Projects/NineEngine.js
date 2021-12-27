@@ -1,6 +1,8 @@
-import styles from "../../styles/Home.module.css";
-import cStyles from "../../styles/Carousel.module.css";
-import pStyles from "../../styles/Projects.module.css";
+import SCommon from "../../styles/Common.module.css";
+import SCarousel from "../../styles/Components/Carousel.module.css";
+import SProjects from "../../styles/Pages/Projects.module.css";
+import SHeader from "../../styles/Components/Header.module.css";
+
 
 import Link from "next/link";
 import Head from "next/head";
@@ -16,56 +18,45 @@ import showcase2 from "../../public/Projects/NineEngine/engine4.png";
 
 export default function NineEngine() {
     return (
-        <div className={styles.container}>
+        <div className={SCommon.container}>
             <Head>
                 <title>NineEngine</title>
                 <meta name="description" content="My custom game engine and renderer"/>
                 <link rel="icon" href="/Assets/Site/logoTS.png"/>
             </Head>
 
-            <Header goBackLink="/Projects">
-                <Link href="/" passHref>
-                    <div className={styles.subpageButton}>
-                        <p>Home</p>
-                    </div>
-                </Link>
-                <Link href="/Contact" passHref>
-                    <div className={styles.subpageButton}>
-                        <p>Contact Me</p>
-                    </div>
-                </Link>
-                <Link href="/AboutMe" passHref>
-                    <div className={styles.subpageButton}>
-                        <p>About Me</p>
-                    </div>
-                </Link>
-            </Header>
+            <Header goBackLink="/Projects"
+                    buttons={[
+                        {Name: "Home", Link: "/"},
+                        {Name: "Contact Me", Link: "/Contact"},
+                        {Name: "About Me", Link: "/AboutMe"}
+                    ]}
+            />
 
-            <div className={pStyles.titleSpacer}/>
-            <h1 className={styles.title}>NineEngine</h1>
-
+            <div className={SCommon.titleSpacer}/>
+            <h1 className={SCommon.title}>NineEngine</h1>
 
             <Carousel link={"https://github.com/NineBallo/NineEngine"}>
                 <Slide>
-                    <div className={cStyles.image}>
+                    <div className={SCarousel.image}>
                         <Image
                             src={showcase1}
                             alt="Le engio"
                             placeholder="blur"
                             layout="responsive"
                             priority={true}
-                            quality={90}
+                            quality={85}
                         />
                     </div>
                 </Slide>
                 <Slide>
-                    <div className={cStyles.image}>
+                    <div className={SCarousel.image}>
                         <Image
                             src={showcase2}
                             alt="Le engio"
                             placeholder="blur"
                             layout="responsive"
-                            quality={90}
+                            quality={85}
                         />
                     </div>
                 </Slide>
@@ -101,8 +92,6 @@ export default function NineEngine() {
                           " implementation of physics by the time I'm done with it."}
                 />
             </InfoParent>
-
-
         </div>
     );
 }

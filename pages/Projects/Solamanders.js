@@ -1,6 +1,8 @@
-import styles from "../../styles/Home.module.css";
-import cStyles from "../../styles/Carousel.module.css";
-import pStyles from "../../styles/Projects.module.css";
+import SCommon from "../../styles/Common.module.css";
+import SCarousel from "../../styles/Components/Carousel.module.css";
+import SProjects from "../../styles/Pages/Projects.module.css";
+import SHeader from "../../styles/Components/Header.module.css";
+
 
 import Link from "next/link";
 import Head from "next/head";
@@ -17,38 +19,28 @@ import TerrariumTank from "../../public/Projects/Solamanders/TTank.png";
 
 export default function Solamanders() {
     return (
-        <div className={styles.container}>
+        <div className={SCommon.container}>
             <Head>
                 <title>Solamanders</title>
                 <meta name="description" content="My first commission project"/>
                 <link rel="icon" href="/Assets/Site/logoTS.png"/>
             </Head>
 
-            <Header goBackLink="/Projects">
-                <Link href="/" passHref>
-                    <div className={styles.subpageButton}>
-                        <p>Home</p>
-                    </div>
-                </Link>
-                <Link href="/Contact" passHref>
-                    <div className={styles.subpageButton}>
-                        <p>Contact Me</p>
-                    </div>
-                </Link>
-                <Link href="/AboutMe" passHref>
-                    <div className={styles.subpageButton}>
-                        <p>About Me</p>
-                    </div>
-                </Link>
-            </Header>
+            <Header goBackLink="/Projects"
+                    buttons={[
+                        {Name: "Home", Link: "/"},
+                        {Name: "Contact Me", Link: "/Contact"},
+                        {Name: "About Me", Link: "/AboutMe"}
+                    ]}
+            />
 
-            <div className={pStyles.titleSpacer}/>
-            <h1 className={styles.title}>Solamanders</h1>
+            <div className={SCommon.titleSpacer}/>
+            <h1 className={SCommon.title}>Solamanders</h1>
 
 
             <Carousel link={"https://solamanders.com/"}>
                 <Slide>
-                    <div className={cStyles.image}>
+                    <div className={SCarousel.image}>
                         <Image
                             src={BabyMander}
                             alt="Le engio"
@@ -59,7 +51,7 @@ export default function Solamanders() {
                     </div>
                 </Slide>
                 <Slide>
-                    <div className={cStyles.image}>
+                    <div className={SCarousel.image}>
                         <Image
                             src={TerrariumTank}
                             alt="Le engio"
@@ -70,7 +62,7 @@ export default function Solamanders() {
                     </div>
                 </Slide>
                 <Slide>
-                    <div className={cStyles.image}>
+                    <div className={SCarousel.image}>
                         <Image
                             src={Gen1Mander}
                             alt="Le engio"

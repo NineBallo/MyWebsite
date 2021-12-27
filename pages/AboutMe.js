@@ -1,40 +1,29 @@
-import styles from "../styles/Home.module.css";
-import abstyles from "../styles/AboutMe.module.css";
-import Link from "next/link";
 import Head from "next/head";
-import {Header} from "../components/Header";
-import pStyles from "../styles/Projects.module.css";
-import {InfoChild, InfoParent} from "../components/TextBox";
 
+import {InfoChild, InfoParent} from "../components/TextBox";
+import {Header} from "../components/Header";
+
+import SCommon from "../styles/Common.module.css";
 
 export default function AboutMe() {
     return (
-        <div className={styles.container}>
+        <div className={SCommon.container}>
             <Head>
                 <title>About me!</title>
                 <meta name="description" content="About me!"/>
             </Head>
 
-            <Header>
-                <Link href="/Volunteer" passHref>
-                    <div className={styles.subpageButton}>
-                        <p>Volunteer Work</p>
-                    </div>
-                </Link>
-                <Link href="/Contact" passHref>
-                    <div className={styles.subpageButton}>
-                        <p>Contact Me</p>
-                    </div>
-                </Link>
-                <Link href="/Projects" passHref>
-                    <div className={styles.subpageButton}>
-                        <p>My Projects</p>
-                    </div>
-                </Link>
-            </Header>
 
-            <div className={pStyles.titleSpacer}/>
-            <h1 className={styles.title}>About Me!</h1>
+            <Header goBackLink="/"
+                    buttons={[
+                        {Name: "Volunteer Work", Link: "/Volunteer"},
+                        {Name: "Projects", Link: "/Projects"},
+                        {Name: "Contact Me", Link: "/Contact"}
+                    ]}
+            />
+
+            <div className={SCommon.titleSpacer}/>
+            <h1 className={SCommon.title}>About Me!</h1>
 
             <InfoParent>
                 <InfoChild

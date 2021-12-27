@@ -3,7 +3,7 @@ import Image from "next/image";
 import {useCallback} from "react";
 import useEmblaCarousel from "embla-carousel-react";
 
-import styles from "../styles/Carousel.module.css";
+import styles from "../styles/Components/Carousel.module.css";
 
 import buttonNext from "../public/Assets/SlideShow/slideShowNext.png";
 import buttonPrev from "../public/Assets/SlideShow/slideShowBack.png";

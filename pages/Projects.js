@@ -6,12 +6,13 @@ import {Header} from "../components/Header";
 import {ProjectCard} from "../components/TextBox";
 
 
-import styles from "../styles/Home.module.css";
-import pStyles from "../styles/Projects.module.css";
+import SCommon from "../styles/Common.module.css";
+import SProjects from "../styles/Pages/Projects.module.css";
+import SHeader from "../styles/Components/Header.module.css";
 
 export default function Projects() {
   return (
-    <div className={styles.container}>
+    <div className={SCommon.container}>
       <Head>
         <title>My Projects!</title>
         <meta
@@ -20,28 +21,19 @@ export default function Projects() {
         />
       </Head>
 
-      <Header goBackLink="/">
-        <Link href="/Volunteer" passHref>
-          <div className={styles.subpageButton}>
-            <p>Volunteer Work</p>
-          </div>
-        </Link>
-        <Link href="/Contact" passHref>
-          <div className={styles.subpageButton}>
-            <p>Contact Me</p>
-          </div>
-        </Link>
-        <Link href="/AboutMe" passHref>
-          <div className={styles.subpageButton}>
-            <p>About Me</p>
-          </div>
-        </Link>
-      </Header>
 
-      <div className={pStyles.titleSpacer}/>
-      <h1 className={styles.title}>My Projects</h1>
+        <Header goBackLink="/"
+                buttons={[
+                    {Name: "Volunteer Work", Link: "/Volunteer"},
+                    {Name: "Contact Me", Link: "/Contact"},
+                    {Name: "About Me", Link: "/AboutMe"}
+                ]}
+        />
 
-      <div className={styles.grid}>
+      <div className={SCommon.titleSpacer}/>
+      <h1 className={SCommon.title}>My Projects</h1>
+
+      <div className={SCommon.grid}>
         <ProjectCard
         link={"/Projects/NineEngine"}
         title={"NineEngine"}
@@ -59,9 +51,9 @@ export default function Projects() {
         />
 
       </div>
-        <footer className={styles.bottomFooter}>
+        <footer>
             <Link href="https://github.com/NineBallo/MyWebsite" passHref>
-                <h4 className={styles.footerLink}>Made by ME!</h4>
+                <h4 className={SCommon.footerLink}>Made by ME!</h4>
             </Link>
         </footer>
     </div>

@@ -1,5 +1,5 @@
-import styles from "../styles/TextBoxes.module.css";
-import HStyles from "../styles/Home.module.css";
+import STextBox from "../styles/Components/TextBoxes.module.css";
+import SCommon from "../styles/Common.module.css";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -7,7 +7,7 @@ import Link from "next/link";
 export function InfoParent({ children }) {
 
     return(
-            <div className={styles.infoParent}>
+            <div className={STextBox.infoParent}>
                 {children}
             </div>
     )
@@ -16,7 +16,7 @@ export function InfoParent({ children }) {
 export function InfoChild(props) {
 
     return(
-        <div className={styles.infoChild}>
+        <div className={STextBox.infoChild}>
             <b>{props.title}</b>
             <p>{props.desc}</p>
         </div>
@@ -27,7 +27,7 @@ export function InfoChild(props) {
 export function SnakeBoxParent({ children }) {
 
     return(
-        <div className={styles.snakeParent}>
+        <div className={STextBox.snakeParent}>
             {children}
         </div>
     )
@@ -37,7 +37,7 @@ export function SnakeBoxParent({ children }) {
 function SnakeImage(img, link) {
 
     return (
-        <a href={link} target="_blank" rel="noopener noreferrer" className={styles.snakeImg}>
+        <a href={link} target="_blank" rel="noopener noreferrer" className={STextBox.snakeImg}>
             <Image
                 src={img}
                 alt="Snake Box"
@@ -81,7 +81,7 @@ function SnakeText(text, tag="", link="") {
     }
 
         return (
-            <div className={styles.snakeText}>
+            <div className={STextBox.snakeText}>
                 {output}
             </div>
     )
@@ -89,9 +89,9 @@ function SnakeText(text, tag="", link="") {
 
 export function SnakeBoxChild(props) {
     return(
-        <div className={styles.snakeChild}>
+        <div className={STextBox.snakeChild}>
             {SnakeImage(props.img, props.link)}
-            <div className={styles.snakeSpacer} />
+            <div className={STextBox.snakeSpacer} />
             {SnakeText(props.txt, props.tag, props.link)}
         </div>
     )
@@ -102,7 +102,7 @@ export function ProjectCard(props) {
     return(
         // eslint-disable-next-line @next/next/link-passhref
         <Link href={props.link}>
-            <div className={HStyles.card}>
+            <div className={SCommon.card}>
                 <h2>{props.title}</h2>
                 <p>{props.desc}</p>
             </div>
@@ -121,7 +121,7 @@ export function ContactCard(props) {
     }
     return (
 
-    <a className={HStyles.card} href={link} style={style} rel="noopener noreferrer" target="_blank">
+    <a className={SCommon.card} href={link} style={style} rel="noopener noreferrer" target="_blank">
         <h2>{props.title}</h2>
         <p>{props.desc}</p>
     </a>

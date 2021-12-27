@@ -1,16 +1,33 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Components/Header.module.css";
 
 import backArrow from "../public/Assets/Header/ArrowBack4.png";
+import SHeader from "../styles/Components/Header.module.css";
 
 
 export function Header(props) {
     let link='/'
+
     if(props.goBackLink) {
         link = props.goBackLink;
     }
+
+    let buttons = [];
+    if(props.buttons) {
+        for(let BData of props.buttons) {
+            buttons.push(
+                <Link href={BData.Link} passHref>
+                    <div className={SHeader.subpageButton}>
+                        <p>{BData.Name}</p>
+                    </div>
+                </Link>
+            )
+        }
+    }
+
+
     return (
         <header className={styles.subpageHeader}>
             <Link href={link} passHref>
@@ -28,7 +45,7 @@ export function Header(props) {
             <div className={styles.headerSpacer}>
             </div>
             <div className={styles.headerButtonBox}>
-                {props.children}
+                {buttons}
             </div>
         </header>
     )

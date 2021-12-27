@@ -1,10 +1,11 @@
-import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import Head from "next/head";
-import pStyles from "../styles/Projects.module.css";
+
 import {Header} from "../components/Header";
 import {SnakeBoxChild, SnakeBoxParent} from "../components/TextBox";
 
+import SCommon from "../styles/Common.module.css";
+import SHeader from "../styles/Components/Header.module.css";
 
 import Pince from "../public/Volunteer/Pince.png";
 import OpenRGB from "../public/Volunteer/OpenRGB.png";
@@ -13,7 +14,7 @@ import Fest from "../public/Volunteer/Fest.jpg"
 
 export default function Volunteer() {
     return (
-        <div className={styles.container}>
+        <div className={SCommon.container}>
             <Head>
                 <title>Volunteer Work</title>
                 <meta
@@ -22,30 +23,18 @@ export default function Volunteer() {
                 />
             </Head>
 
-            <Header goBackLink="/">
-                <Link href="/Projects" passHref>
-                    <div className={styles.subpageButton}>
-                        <p>Projects</p>
-                    </div>
-                </Link>
-                <Link href="/Contact" passHref>
-                    <div className={styles.subpageButton}>
-                        <p>Contact Me</p>
-                    </div>
-                </Link>
-                <Link href="/AboutMe" passHref>
-                    <div className={styles.subpageButton}>
-                        <p>About Me</p>
-                    </div>
-                </Link>
-            </Header>
+            <Header goBackLink="/"
+                    buttons={[
+                        {Name: "Projects", Link: "/Projects"},
+                        {Name: "Contact Me", Link: "/Contact"},
+                        {Name: "About Me", Link: "/AboutMe"}
+                    ]}
+            />
 
-            <div className={pStyles.titleSpacer}/>
-            <h1 className={styles.title}>Volunteer Work</h1>
-
+            <div className={SCommon.titleSpacer}/>
+            <h1 className={SCommon.title}>Volunteer Work</h1>
 
             <SnakeBoxParent>
-
                 <SnakeBoxChild
                     img={SlamBKB}
                     link={"http://www.stalbertslam.com/"}

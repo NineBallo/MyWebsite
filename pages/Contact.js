@@ -1,42 +1,35 @@
-import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import Head from "next/head";
-import pStyles from "../styles/Projects.module.css";
+
 import {Header} from "../components/Header";
 import {ContactCard} from "../components/TextBox";
 
+
+import SCommon from "../styles/Common.module.css";
+import SHeader from "../styles/Components/Header.module.css";
+
+
+
 export default function ContactMe() {
   return (
-    <div className={styles.container}>
+    <div className={SCommon.container}>
       <Head>
         <title>Contact me!</title>
         <meta name="description" content="How to contact me" />
       </Head>
-      <Header>
-        <Link href="/Volunteer" passHref>
-          <div className={styles.subpageButton}>
-            <p>Volunteer Work</p>
-          </div>
-        </Link>
-        <Link href="/Projects" passHref>
-          <div className={styles.subpageButton}>
-            <p>Projects</p>
-          </div>
-        </Link>
-        <Link href="/AboutMe" passHref>
-          <div className={styles.subpageButton}>
-            <p>About Me</p>
-          </div>
-        </Link>
-      </Header>
 
-      <div className={pStyles.titleSpacer}/>
-      <h1 className={styles.title}>Contact Me!</h1>
+        <Header goBackLink="/"
+                buttons={[
+                    {Name: "Volunteer Work", Link: "/Volunteer" },
+                    {Name: "Projects", Link: "/Projects"},
+                    {Name: "About Me", Link: "/AboutMe"}
+                ]}
+        />
 
+      <div className={SCommon.titleSpacer}/>
+      <h1 className={SCommon.title}>Contact Me!</h1>
 
-
-
-      <div className={styles.grid}>
+      <div className={SCommon.grid}>
         <ContactCard
             link={"mailto:NineBallCode@gmail.com"}
             title={"Mail"}
@@ -62,7 +55,7 @@ export default function ContactMe() {
 
         <footer>
             <Link href="https://github.com/NineBallo/NewWebsite" passHref>
-                <h4 className={styles.footerLink}>Made by ME!</h4>
+                <h4 className={SCommon.footerLink}>Made by ME!</h4>
             </Link>
         </footer>
     </div>

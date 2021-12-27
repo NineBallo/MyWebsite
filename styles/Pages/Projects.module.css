@@ -1,26 +1,11 @@
-.titleSpacer {
-    height: 100px;
-    width: 100vw;
-    display: none;
-}
-
 .title,
 .longTitle {
-    margin: 0;
     line-height: 1.15;
     font-size: 4rem;
-    margin-top: 1%;
-
+    margin: 1% 0 0;
 
     display: flex;
     align-content: flex-start;
-}
-
-/*MOBILE */
-@media (max-width: 1300px) {
-    .titleSpacer {
-        display: block;
-    }
 }
 
 /*LongTitle is the same as title but will resize more aggressively*/
