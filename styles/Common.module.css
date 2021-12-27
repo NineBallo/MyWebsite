@@ -3,14 +3,6 @@
     cursor: pointer;
 }
 
-.code {
-    background: #fafafa;
-    border-radius: 5px;
-    padding: 0.75rem;
-    font-size: 1.1rem;
-    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
 .container {
     min-height: 100vh;
 
@@ -23,7 +15,8 @@
 
 
 /*TITLE STUFF*/
-.title {
+.title,
+.longTitle {
     line-height: 1.15;
     font-size: 4rem;
     margin: 1% 0 0;
@@ -31,7 +24,6 @@
     display: flex;
     align-content: flex-start;
 }
-
 
 .titleSpacer {
     height: 100px;
@@ -50,7 +42,6 @@
     text-decoration: underline;
 }
 
-
 .title,
 .description {
     text-align: center;
@@ -63,49 +54,6 @@
     font-size: 1.3rem;
 }
 
-/*GRID STUFF TODO: make component*/
-.grid {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 70%;
-    margin-top: 3rem;
-}
-
-.card {
-    margin: 1rem;
-    padding: 1.5rem;
-    text-align: left;
-    color: #c0c0c0;
-    text-decoration: none;
-    border: 3px solid #eaeaea;
-    border-radius: 10px;
-    transition: color 0.15s ease, border-color 0.15s ease;
-    max-width: 450px;
-    width: 45%;
-
-    min-height: 12rem;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-    color: #ac83ce;
-    border-color: #6d00c7;
-}
-
-.card h2 {
-    margin: 0 0 1rem 0;
-    font-size: 1.5rem;
-}
-
-.card p {
-    margin: 0;
-    font-size: 1.25rem;
-    line-height: 1.5;
-}
-
 @media (max-width: 1300px) {
     .titleSpacer {
         display: block;
@@ -113,18 +61,6 @@
 }
 
 @media (max-width: 950px) {
-    .grid {
-        width: 100%;
-        max-width: 100%;
-        flex-direction: column;
-    }
-
-    .card {
-        max-width: 400px;
-        width: 90%;
-    }
-
-
     .title {
         font-size: 3rem;
         align-content: center;
@@ -138,4 +74,9 @@
     }
 }
 
-
+/*LongTitle is the same as title but will resize more aggressively*/
+@media (max-width: 400px) {
+    .longTitle {
+        font-size: 35px;
+    }
+}

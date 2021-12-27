@@ -2,23 +2,22 @@ import Image from "next/image";
 import Link from "next/link";
 
 import styles from "../styles/Components/Header.module.css";
-
-import backArrow from "../public/Assets/Header/ArrowBack4.png";
 import SHeader from "../styles/Components/Header.module.css";
 
+import backArrow from "../public/Assets/Header/ArrowBack4.png";
 
 export function Header(props) {
-    let link='/'
+    let link = '/'
 
-    if(props.goBackLink) {
+    if (props.goBackLink) {
         link = props.goBackLink;
     }
 
     let buttons = [];
-    if(props.buttons) {
-        for(let BData of props.buttons) {
+    if (props.buttons) {
+        for (let BData of props.buttons) {
             buttons.push(
-                <Link href={BData.Link} passHref>
+                <Link key={`HButton_${buttons.length}`} href={BData.Link} passHref>
                     <div className={SHeader.subpageButton}>
                         <p>{BData.Name}</p>
                     </div>
@@ -27,23 +26,23 @@ export function Header(props) {
         }
     }
 
-
     return (
         <header className={styles.subpageHeader}>
             <Link href={link} passHref>
                 <div className={styles.headerNameBox}>
-                        <Image
-                            src={backArrow}
-                            layout="intrinsic"
-                            priority={true}
-                            loading={"eager"}
-                            alt={"Go Back"}
-                        />
+                    <Image
+                        src={backArrow}
+                        layout="intrinsic"
+                        loading={"eager"}
+                        priority={true}
+                        alt={"Go Back"}
+                        quality={80}
+                    />
                 </div>
             </Link>
 
-            <div className={styles.headerSpacer}>
-            </div>
+            <div className={styles.headerSpacer}/>
+
             <div className={styles.headerButtonBox}>
                 {buttons}
             </div>

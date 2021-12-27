@@ -1,17 +1,12 @@
-import SCommon from "../../styles/Common.module.css";
-import SCarousel from "../../styles/Components/Carousel.module.css";
-import SProjects from "../../styles/Pages/Projects.module.css";
-import SHeader from "../../styles/Components/Header.module.css";
-
-
-import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
+
 import {Carousel, Slide} from "../../components/Carousel";
 import {Header} from "../../components/Header";
-
 import {InfoChild, InfoParent} from "../../components/TextBox";
 
+import SCommon from "../../styles/Common.module.css";
+import SCarousel from "../../styles/Components/Carousel.module.css";
 
 import showcase1 from "../../public/Projects/NineEngine/engine2.png";
 import showcase2 from "../../public/Projects/NineEngine/engine4.png";
@@ -41,7 +36,7 @@ export default function NineEngine() {
                     <div className={SCarousel.image}>
                         <Image
                             src={showcase1}
-                            alt="Le engio"
+                            alt="Well this is supposed to be a picture of my engine"
                             placeholder="blur"
                             layout="responsive"
                             priority={true}
@@ -53,7 +48,7 @@ export default function NineEngine() {
                     <div className={SCarousel.image}>
                         <Image
                             src={showcase2}
-                            alt="Le engio"
+                            alt="Well this is supposed to be a picture of my engine"
                             placeholder="blur"
                             layout="responsive"
                             quality={85}
@@ -69,12 +64,12 @@ export default function NineEngine() {
                     desc={"I wanted to learn the Vulkan API and introduce myself to graphics programming so" +
                     " I created this project to learn it. So far I have created a simple" +
                     " renderer and learned the basics to Vulkan; I've also learned techniques for structuring large " +
-                    " projects, and learned general graphics and UI programming techniques that I previously did not know."}
+                    " projects, and learned general graphics and UI programming techniques that I previously didn't know."}
                 />
                 <InfoChild
                     title={"Features"}
-                    desc={"I have implemented an IMGUI system for managing" +
-                    " entity's loaded into the Entity Component System." +
+                    desc={"I have implemented an IMGUI layer for managing" +
+                    " entity's loaded into the Engines ECS." +
                     " Eventually I want to theme and integrate it better into the renderers internals." +
                     " I've also implemented the Vulkan API as the current graphics protocol so that I can better learn" +
                     " the low-level workings of graphics programming."}
@@ -82,14 +77,14 @@ export default function NineEngine() {
                 <InfoChild
                     title={"Plans"}
                     desc={"I plan on using this as an entrance project not only into more advanced graphics programming" +
-                          " but also into things such as realistically simulated physics and sound."}
+                    " but also into things such as realistically simulated physics and sound."}
                 />
                 <InfoChild
                     title={"Goals"}
                     desc={"My goals are to learn as much as I can from it" +
-                          " and apply those techniques to other projects I'm working on." +
-                          " I hope however to achieve some level of realistic lighting and a basic" +
-                          " implementation of physics by the time I'm done with it."}
+                    " and apply those techniques to other projects I'm working on." +
+                    " I hope however to achieve some level of realistic lighting and a basic" +
+                    " implementation of physics by the time I'm done with it."}
                 />
             </InfoParent>
         </div>

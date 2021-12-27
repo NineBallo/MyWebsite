@@ -28,7 +28,7 @@
     width: 75vw;
     height: fit-content;
     background-color: #18001d;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.637);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.637);
     align-items: stretch;
     justify-content: center;
     align-content: center;
@@ -87,6 +87,7 @@
 .slideButton_next {
     margin-left: 95.5%;
 }
+
 .slideButton_prev {
     margin-right: 95%;
 }
@@ -95,15 +96,12 @@
     position: relative;
 }
 
-.buttonImage {
-    width: 40px
-}
-
 /*MOBILE */
 @media (max-width: 700px) {
-    .showcase{
+    .showcase {
         width: 99%;
     }
+
     .slideButton_prev,
     .slideButton_next {
         width: 7%;
@@ -113,8 +111,9 @@
     .slideButton_prev {
         margin-right: 95%;
         margin-left: 0;
-        transform:translateX(-10%);
+        transform: translateX(-10%);
     }
+
     .slideButton_next {
         margin-left: 94%;
     }

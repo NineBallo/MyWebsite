@@ -1,7 +1,9 @@
+import Typewriter from "typewriter-effect";
+
 import Head from "next/head";
 import Link from "next/link";
 
-import Typewriter from "typewriter-effect";
+import {Card, Grid} from "../components/Grid";
 
 import SIndex from "../styles/Pages/Index.module.css";
 import SCommon from "../styles/Common.module.css";
@@ -39,38 +41,16 @@ export default function Home() {
       </div>
 
       <main>
-        <div className={SCommon.grid}>
-          <Link href="/Projects" passHref>
-            <div className={SCommon.card}>
-              <b style={{fontSize: "120%"}}>My Projects</b>
-              <p style={{fontSize: "100%"}}>All of my current public projects and what they do.</p>
-            </div>
-          </Link>
+          <Grid>
+              <Card Link="/Projects" Title="My Projects" Description="An overview of my current public projects."/>
 
-          <Link href="/Volunteer" passHref>
-            <div className={SCommon.card}>
-              <b style={{fontSize: "120%"}}>Volunteer Work and Open-Source contributions</b>
-              <p style={{fontSize: "100%"}}>
-                Here you can find some of the time I&apos;ve contributed to the
-                community.
-              </p>
-            </div>
-          </Link>
+              <Card Link="/Volunteer" Title="Volunteer and Open-Source contributions"
+                    Description="Here you can find some of the time I've contributed to the community."/>
 
-          <Link href="/Contact" passHref>
-            <div className={SCommon.card}>
-              <b style={{fontSize: "120%"}}>Contact Me</b>
-              <p style={{fontSize: "100%"}}>If you wish to get in touch here is my contact info!</p>
-            </div>
-          </Link>
+              <Card Link="/Contact" Title="Contact Me" Description="If you wish to get in touch here is my contact info!"/>
 
-          <Link href="/AboutMe" passHref>
-            <div className={SCommon.card}>
-              <b style={{fontSize: "120%"}}>About Me</b>
-              <p style={{fontSize: "100%"}}>Learn some more about me!</p>
-            </div>
-          </Link>
-        </div>
+              <Card Link="/AboutMe" Title="About Me" Description="Learn some more about me!"/>
+          </Grid>
       </main>
 
       <footer>

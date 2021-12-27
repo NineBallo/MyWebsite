@@ -1,17 +1,12 @@
-import SCommon from "../../styles/Common.module.css";
-import SCarousel from "../../styles/Components/Carousel.module.css";
-import SProjects from "../../styles/Pages/Projects.module.css";
-import SHeader from "../../styles/Components/Header.module.css";
-
-
-import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
+
 import {Carousel, Slide} from "../../components/Carousel";
 import {Header} from "../../components/Header";
-
 import {InfoChild, InfoParent} from "../../components/TextBox";
 
+import SCommon from "../../styles/Common.module.css";
+import SCarousel from "../../styles/Components/Carousel.module.css"; //TODO turn slides into proper component
 
 import BabyMander from "../../public/Projects/Solamanders/BabyMander.png";
 import Gen1Mander from "../../public/Projects/Solamanders/Gen1Mander.png";
@@ -37,16 +32,14 @@ export default function Solamanders() {
             <div className={SCommon.titleSpacer}/>
             <h1 className={SCommon.title}>Solamanders</h1>
 
-
             <Carousel link={"https://solamanders.com/"}>
                 <Slide>
                     <div className={SCarousel.image}>
                         <Image
                             src={BabyMander}
-                            alt="Le engio"
+                            alt=""
                             placeholder="blur"
                             layout="responsive"
-                            quality={90}
                         />
                     </div>
                 </Slide>
@@ -54,10 +47,9 @@ export default function Solamanders() {
                     <div className={SCarousel.image}>
                         <Image
                             src={TerrariumTank}
-                            alt="Le engio"
+                            alt=""
                             placeholder="blur"
                             layout="responsive"
-                            quality={90}
                         />
                     </div>
                 </Slide>
@@ -65,10 +57,9 @@ export default function Solamanders() {
                     <div className={SCarousel.image}>
                         <Image
                             src={Gen1Mander}
-                            alt="Le engio"
+                            alt=""
                             placeholder="blur"
                             layout="responsive"
-                            quality={90}
                         />
                     </div>
                 </Slide>
@@ -77,35 +68,35 @@ export default function Solamanders() {
             <InfoParent>
                 <InfoChild
                     title={"The Who?"}
-                    desc={"The main team consists of 5 people, I was one of the first outside of that group brought onto" +
-                    " the project by one of the main devs and friend to help get the project started."}
+                    desc={"The main team consists of 5 people, I was one of the first outside of that initial group" +
+                    "  brought onto the project. I was brought on by one of the main devs (and friend) to help out on the project."}
                 />
                 <InfoChild
-                    title={"The What?"}
-                    desc={"It is a NFT project consisting of three releases, the first being 10000 randomly generated NFT" +
+                    title={"What is it?"}
+                    desc={"This is a NFT project consisting of three releases, the first being 10000 randomly generated NFT" +
                     " salamanders, these salamanders with the help of another drop of NFT \"Terrarium Tanks\" allowed" +
-                    " people to breed those initial 10000 into other \"Gen 2\" Baby Solamanders."}
+                    " people to breed those initial 10000 into 5000 other \"Gen 2\" Baby Solamanders carrying over" +
+                    " traits from the parents."}
                 />
 
                 <InfoChild
-                    title={"The Why?"}
-                    desc={"I had wanted to learn how blockchain applications were programmed and how the ecosystem " +
+                    title={"Why did I work on this?"}
+                    desc={"I wanted to learn how blockchain applications were programmed and how the ecosystem " +
                     "functioned. I had been planning to dip my toes into blockchain based programming and once I was" +
                     " offered to work on this project I took the opportunity to learn how things work."}
                 />
                 <InfoChild
                     title={"Genetics"}
-                    desc={"I implemented and helped create the algorithm for breeding. This is what allows Gen 1 'manders" +
+                    desc={"I implemented and helped create the algorithm for breeding. This is what allows Gen 1 Solamanders" +
                     " to be bred into Gen2 Baby-Manders. It allows for parent traits to be passed down genetically" +
-                    " based on a set of factors. This system gives people control over their 'manders and lets" +
+                    " based on a set of factors. This system gives people control over their Solamanders and lets" +
                     " them have some control over what the Gen2 will look like."}
                 />
                 <InfoChild
-
-                title={"Solana"}
-                desc={"This project was built on the Solana blockchain and therefore carries many of the benefits of that;" +
-                " such as the low transaction fees, quick transaction speeds, and a relatively nice dev environment/community."}
-            />
+                    title={"Solana"}
+                    desc={"This project was built on the Solana blockchain and therefore carries many of the benefits of that;" +
+                    " such as the low transaction fees, quick transaction speeds, and a relatively nice dev environment/community."}
+                />
             </InfoParent>
 
 

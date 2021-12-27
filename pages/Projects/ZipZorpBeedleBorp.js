@@ -1,16 +1,12 @@
-import SCommon from "../../styles/Common.module.css";
-import SCarousel from "../../styles/Components/Carousel.module.css";
-import SProjects from "../../styles/Pages/Projects.module.css";
-import SHeader from "../../styles/Components/Header.module.css";
-
-import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
+
 import {Carousel, Slide} from "../../components/Carousel";
 import {Header} from "../../components/Header";
-
 import {InfoChild, InfoParent} from "../../components/TextBox";
 
+import SCommon from "../../styles/Common.module.css";
+import SCarousel from "../../styles/Components/Carousel.module.css";
 
 import CSGO1 from "../../public/Projects/ZipZorp/CSGO1.png";
 import CSGO2 from "../../public/Projects/ZipZorp/CSGO2.png";
@@ -34,7 +30,7 @@ export default function ZipZorpBeedleBorp() {
             />
 
             <div className={SCommon.titleSpacer}/>
-            <h1 className={SProjects.longTitle}>ZipZorpBeebleBorp</h1>
+            <h1 className={SCommon.longTitle}>ZipZorpBeebleBorp</h1>
 
             <Carousel link={"https://github.com/NineBallo/ZipZorpBeedleBorp"}>
                 <Slide>
@@ -43,8 +39,7 @@ export default function ZipZorpBeedleBorp() {
                             src={CSGO1}
                             placeholder="blur"
                             layout="responsive"
-                            quality={90}
-                            alt={""}
+                            alt="Well this is supposed to be a picture of CSGO ESP"
                         />
                     </div>
                 </Slide>
@@ -54,22 +49,20 @@ export default function ZipZorpBeedleBorp() {
                             src={CSGO2}
                             placeholder="blur"
                             layout="responsive"
-                            quality={90}
-                            alt={""}
+                            alt="Well this is supposed to be a picture of CSGO ESP"
                         />
                     </div>
                 </Slide>
                 <Slide>
-                <div className={SCarousel.image}>
-                    <Image
-                        src={CSGO3}
-                        placeholder="blur"
-                        layout="responsive"
-                        quality={90}
-                        alt={""}
-                    />
-                </div>
-            </Slide>
+                    <div className={SCarousel.image}>
+                        <Image
+                            src={CSGO3}
+                            placeholder="blur"
+                            layout="responsive"
+                            alt="Well this is supposed to be a picture of CSGO ESP"
+                        />
+                    </div>
+                </Slide>
             </Carousel>
 
             <InfoParent>
@@ -89,7 +82,8 @@ export default function ZipZorpBeedleBorp() {
                     title={"What Did I Learn?"}
                     desc={"From this project I better learned what compiling actually meant, I learned how to decompile" +
                     " and reverse engineer programs; as well as mastering pointers, deepening my knowledge of C++," +
-                    " and learning how to count in both hexadecimal and binary."}
+                    " and learning how to count in both hexadecimal and binary. Overall this project taught me a lot" +
+                    " about the foundation that programs are built on. "}
                 />
                 <InfoChild
                     title={"Future of this project"}
