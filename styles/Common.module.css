@@ -138,16 +138,4 @@
     }
 }
 
-@media (max-width: 360px) {
-    .subpageButton {
-        font-size: 150%;
-    }
-}
-
-@media (max-width: 350px) {
-    .subpageButton {
-        font-size: 100%;
-    }
-}
-
 
