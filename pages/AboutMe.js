@@ -28,22 +28,23 @@ export default function AboutMe() {
             <InfoParent>
                 <InfoChild
                     title={"Who am I?"}
-                    desc={"I'm a high-school student and self taught developer. I first started when I was 12, on a" +
-                    " hacked chromebook running linux. Ever since then my desire to learn has continued to grow and" +
-                    " I've been continuing to move onto more advanced topics one after the other."}
+                    desc={"I'm a high-school student and self-taught developer. I first started programming when I was" +
+                    " 12, on a hacked chromebook running linux." +
+                    " Ever since then my desire to learn has continued to grow and" +
+                    " I've been continuing to move onto increasingly more advanced topics."}
                 />
                 <InfoChild
                     title={"Why do I code?"}
                     desc={"I like to learn how things work and computers are such a broad and complicated topic." +
                     " Once I started coding I was hooked, it was a never ending rabbit-hole of new stuff to feed my curiosity." +
                     " Eventually I saved up enough to buy a proper computer; From there I set out to learn even more" +
-                    " advanced topics ranging from hacking, to computer graphics, to web design."}
+                    " advanced topics ranging from hacking to computer graphics."}
                 />
                 <InfoChild
                     title={"What do I know now?"}
                     desc={"My language of choice is C++ however I also have learned JavaScript, Python, and some Rust. " +
                     "I've also spent time studying Vulkan, Docker, Next.js, and how the general memory subsystem of a computer works. " +
-                    "As far as platforms go I've been using Linux since I was 12 and am quite familiar with it "}
+                    "As far as platforms go I've been using Linux for the last 4 years and am quite familiar with it "}
                 />
                 <InfoChild
                     title={"Where do I plan to go from here?"}

@@ -9,6 +9,7 @@ import Pince from "../public/Volunteer/PINCE.webp";
 import OpenRGB from "../public/Volunteer/OpenRGB.webp";
 import SlamBKB from "../public/Volunteer/SLAM.webp"
 import Fest from "../public/Volunteer/CFest.webp"
+import Northlands from "../public/Volunteer/Northlands.webp"
 
 export default function Volunteer() {
     return (
@@ -45,9 +46,19 @@ export default function Volunteer() {
                 <SnakeBoxChild
                     link={"https://stalbert.ca/exp/childfest/"}
                     img={Fest}
-                    txt={"I've volunteered to help run the Children's Festival. The Children's Festival is a event that" +
+                    txt={"I've volunteered for the St.Albert Children's Festival. The Children's Festival is a event that" +
                     " the city of St.Albert holds in order to engage kids in the arts and help bring the community together."}
                     tag={"Children's Festival"}
+                />
+
+                <SnakeBoxChild
+                    link={"https://northlands.com/?page_id=207722"}
+                    img={Northlands}
+                    txt={"I've volunteered for Northlands on many occasions. Most of my time was spent as a Youth/Ag Ambassador" +
+                    " but I also helped out during other events such as KDays. The majority of my role at Northlands included" +
+                    " interacting with guests, teaching people about the exhibits, and answering people's questions." +
+                    " The rest of our time was spent cleaning up and caring for the animals during events such as Farmfair"}
+                    tag={"Northlands"}
                 />
 
                 <SnakeBoxChild
@@ -55,7 +66,7 @@ export default function Volunteer() {
                     img={OpenRGB}
                     txt={"OpenRGB is an open-source, cross-platform way of combining" +
                     " all the silly proprietary RGB programs into one. For this I added support for my mouse: The Logitech G403 Hero." +
-                    " This while a small contribution was my first ever contribution to any open-source software."}
+                    " This while a small contribution was my first contribution to any open-source software."}
                     tag={"OpenRGB"}
                 />
 
