@@ -5,8 +5,8 @@ import useEmblaCarousel from "embla-carousel-react";
 
 import SCarousel from "../styles/Components/Carousel.module.css";
 
-import buttonNext from "../public/Assets/SlideShow/slideShowNext.png";
-import buttonPrev from "../public/Assets/SlideShow/slideShowBack.png";
+import buttonNext from "../public/Assets/SlideShow/SlideNext.webp";
+import buttonPrev from "../public/Assets/SlideShow/SlideBack.webp";
 
 export function Slide({children}) {
     return (

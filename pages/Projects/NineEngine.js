@@ -8,8 +8,8 @@ import {InfoChild, InfoParent} from "../../components/TextBox";
 import SCommon from "../../styles/Common.module.css";
 import SCarousel from "../../styles/Components/Carousel.module.css";
 
-import showcase1 from "../../public/Projects/NineEngine/engine2.png";
-import showcase2 from "../../public/Projects/NineEngine/engine4.png";
+import showcase1 from "../../public/Projects/NineEngine/engine2.webp";
+import showcase2 from "../../public/Projects/NineEngine/engine4.webp";
 
 export default function NineEngine() {
     return (
@@ -17,7 +17,6 @@ export default function NineEngine() {
             <Head>
                 <title>NineEngine</title>
                 <meta name="description" content="My custom game engine and renderer"/>
-                <link rel="icon" href="/Assets/Site/logoTS.png"/>
             </Head>
 
             <Header goBackLink="/Projects"

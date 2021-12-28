@@ -10,7 +10,7 @@ class MyDocument extends Document {
                     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
                           rel="stylesheet"/>
 
-                    <link rel="icon" href="/Assets/Site/logoTS.png"/>
+                    <link rel="icon" href="/Assets/Site/logoTS.webp"/>
                 </Head>
                 <body>
                 <Main/>

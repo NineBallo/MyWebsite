@@ -4,7 +4,7 @@ import Link from "next/link";
 import styles from "../styles/Components/Header.module.css";
 import SHeader from "../styles/Components/Header.module.css";
 
-import backArrow from "../public/Assets/Header/ArrowBack4.png";
+import backArrow from "../public/Assets/Header/BackArrow.webp";
 
 export function Header(props) {
     let link = '/'

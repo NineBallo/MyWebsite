@@ -7,12 +7,11 @@
     position: sticky;
     background-size: 1500px;
     background-repeat: repeat-x;
-    background-image: url("/Assets/Site/Triangles2.png");
+    background-image: url("/Assets/Site/Triangles.webp");
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 
 /*HEADER OVERLAY*/
 .headerOverlay {

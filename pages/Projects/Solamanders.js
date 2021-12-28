@@ -8,9 +8,9 @@ import {InfoChild, InfoParent} from "../../components/TextBox";
 import SCommon from "../../styles/Common.module.css";
 import SCarousel from "../../styles/Components/Carousel.module.css"; //TODO turn slides into proper component
 
-import BabyMander from "../../public/Projects/Solamanders/BabyMander.png";
-import Gen1Mander from "../../public/Projects/Solamanders/Gen1Mander.png";
-import TerrariumTank from "../../public/Projects/Solamanders/TTank.png";
+import BabyMander from "../../public/Projects/Solamanders/BabyMander.webp";
+import Gen1Mander from "../../public/Projects/Solamanders/Gen1Mander.webp";
+import TerrariumTank from "../../public/Projects/Solamanders/TTank.webp";
 
 export default function Solamanders() {
     return (
@@ -18,7 +18,6 @@ export default function Solamanders() {
             <Head>
                 <title>Solamanders</title>
                 <meta name="description" content="My first commission project"/>
-                <link rel="icon" href="/Assets/Site/logoTS.png"/>
             </Head>
 
             <Header goBackLink="/Projects"

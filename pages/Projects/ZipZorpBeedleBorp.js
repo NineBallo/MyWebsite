@@ -8,9 +8,9 @@ import {InfoChild, InfoParent} from "../../components/TextBox";
 import SCommon from "../../styles/Common.module.css";
 import SCarousel from "../../styles/Components/Carousel.module.css";
 
-import CSGO1 from "../../public/Projects/ZipZorp/CSGO1.png";
-import CSGO2 from "../../public/Projects/ZipZorp/CSGO2.png";
-import CSGO3 from "../../public/Projects/ZipZorp/CSGO3.png";
+import CSGO1 from "../../public/Projects/ZipZorp/CSGO1.webp";
+import CSGO2 from "../../public/Projects/ZipZorp/CSGO2.webp";
+import CSGO3 from "../../public/Projects/ZipZorp/CSGO3.webp";
 
 export default function ZipZorpBeedleBorp() {
     return (
@@ -18,7 +18,6 @@ export default function ZipZorpBeedleBorp() {
             <Head>
                 <title>ZipZorpBeedleBorp</title>
                 <meta name="description" content="My entry into low level computing and hacking"/>
-                <link rel="icon" href="/Assets/Site/logoTS.png"/>
             </Head>
 
             <Header goBackLink="/Projects"

@@ -5,10 +5,10 @@ import {SnakeBoxChild, SnakeBoxParent} from "../components/TextBox";
 
 import SCommon from "../styles/Common.module.css";
 
-import Pince from "../public/Volunteer/Pince.png";
-import OpenRGB from "../public/Volunteer/OpenRGB.png";
-import SlamBKB from "../public/Volunteer/Slam.png"
-import Fest from "../public/Volunteer/Fest.jpg"
+import Pince from "../public/Volunteer/PINCE.webp";
+import OpenRGB from "../public/Volunteer/OpenRGB.webp";
+import SlamBKB from "../public/Volunteer/SLAM.webp"
+import Fest from "../public/Volunteer/CFest.webp"
 
 export default function Volunteer() {
     return (
