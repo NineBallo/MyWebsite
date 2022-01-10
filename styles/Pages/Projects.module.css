@@ -1,0 +1,80 @@
+.scrollIndicator {
+    width: 60px;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+    margin-right: 100%;
+    transform:translateX(-7vw);
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    text-align: center;
+}
+
+.scrollIndicator:nth-child(1){
+     top:-30px;
+     left:-30px;
+     animation-delay:0s;
+ }
+.scrollIndicator:nth-child(2){
+     top:-15px;
+     left:-15px;
+     animation-delay:0.2s;
+ }
+.scrollIndicator:nth-child(3){
+     top:0;
+     left:0;
+     animation-delay:0.4s;
+ }
+.scrollIndicator:nth-child(4){
+     top:15px;
+     left:15px;
+     animation-delay:0.6s;
+ }
+
+.scrollArrow {
+    width: 100%;
+    aspect-ratio: 1/1;
+
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+
+    transform: rotate(45deg);
+
+    animation: scrollAnimation 1s linear infinite;
+}
+
+@keyframes scrollAnimation {
+    0% {
+        transform:translateY(0px) rotate(45deg);
+    }
+
+    20%{
+        transform:translateY(15px) rotate(45deg);
+    }
+
+    100% {
+        transform:translateY(30px) rotate(45deg);
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .scrollIndicator {
+        display: none;
+    }
+}
+
+
+#down {
+    margin-top: 100%;
+    padding-bottom: 25%;
+}

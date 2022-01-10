@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import {useCallback} from "react";
 import useEmblaCarousel from "embla-carousel-react";
+import {ScrollIndicator} from "./Projects";
 
 import SCarousel from "../styles/Components/Carousel.module.css";
 
@@ -38,7 +39,6 @@ export function Carousel(props) {
 
     return (
         <div className={SCarousel.carousel}>
-
             <div className={SCarousel.showcaseWrapper}>
                 <div className={SCarousel.showcase}>
                     <div className={SCarousel.embla} ref={emblaRef}>
@@ -50,7 +50,9 @@ export function Carousel(props) {
                 </div>
             </div>
 
-
+            <a href="#down">
+                <ScrollIndicator/>
+            </a>
             <button className={SCarousel.slideButton_prev} onClick={scrollPrev}>
                 <Image
                     src={buttonPrev}

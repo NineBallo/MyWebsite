@@ -5,6 +5,7 @@ import {Carousel, Slide} from "../../components/Carousel";
 import {Header} from "../../components/Header";
 import {InfoChild, InfoParent} from "../../components/TextBox";
 
+
 import SCommon from "../../styles/Common.module.css";
 import SCarousel from "../../styles/Components/Carousel.module.css";
 
@@ -57,7 +58,6 @@ export default function NineEngine() {
             </Carousel>
 
             <InfoParent>
-
                 <InfoChild
                     title={"What is it?"}
                     desc={"I wanted to learn the Vulkan API and introduce myself to graphics programming so" +

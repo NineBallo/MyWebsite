@@ -1,9 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import styles from "../styles/Components/Header.module.css";
 import SHeader from "../styles/Components/Header.module.css";
-
 import backArrow from "../public/Assets/Header/BackArrow.webp";
 
 export function Header(props) {
@@ -27,9 +25,9 @@ export function Header(props) {
     }
 
     return (
-        <header className={styles.subpageHeader}>
+        <header className={SHeader.subpageHeader}>
             <Link href={link} passHref>
-                <div className={styles.headerNameBox}>
+                <div className={SHeader.headerNameBox}>
                     <Image
                         src={backArrow}
                         layout="intrinsic"
@@ -41,9 +39,9 @@ export function Header(props) {
                 </div>
             </Link>
 
-            <div className={styles.headerSpacer}/>
+            <div className={SHeader.headerSpacer}/>
 
-            <div className={styles.headerButtonBox}>
+            <div className={SHeader.headerButtonBox}>
                 {buttons}
             </div>
         </header>

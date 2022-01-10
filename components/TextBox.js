@@ -3,16 +3,14 @@ import Image from "next/image";
 import STextBox from "../styles/Components/TextBoxes.module.css";
 
 export function InfoParent({children}) {
-
     return (
-        <div className={STextBox.infoParent}>
+        <div id="down" className={STextBox.infoParent}>
             {children}
         </div>
     )
 }
 
 export function InfoChild(props) {
-
     return (
         <div className={STextBox.infoChild}>
             <b>{props.title}</b>
@@ -33,7 +31,6 @@ export function SnakeBoxParent({children}) {
 
 
 function SnakeImage(img, link) {
-
     return (
         <a href={link} target="_blank" rel="noopener noreferrer" className={STextBox.snakeImg}>
             <Image
@@ -43,7 +40,6 @@ function SnakeImage(img, link) {
                 layout="responsive"
             />
         </a>
-
     )
 }
 
