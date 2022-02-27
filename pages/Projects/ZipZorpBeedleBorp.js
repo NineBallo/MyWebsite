@@ -11,7 +11,6 @@ import SCarousel from "../../styles/Components/Carousel.module.css";
 import CSGO1 from "../../public/Projects/ZipZorp/CSGO1.webp";
 import CSGO2 from "../../public/Projects/ZipZorp/CSGO2.webp";
 import CSGO3 from "../../public/Projects/ZipZorp/CSGO3.webp";
-import Link from "next/link";
 
 export default function ZipZorpBeedleBorp() {
     return (

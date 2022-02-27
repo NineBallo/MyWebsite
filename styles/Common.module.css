@@ -18,7 +18,7 @@
 .title,
 .longTitle {
     line-height: 1.15;
-    font-size: 4rem;
+    font-size: 64px;
     margin: 1% 0 0;
 
     display: flex;
@@ -51,7 +51,7 @@
 .description {
     margin: 0;
     line-height: 1.5;
-    font-size: 1.3rem;
+    font-size: 21px;
 }
 
 @media (max-width: 1300px) {
@@ -62,7 +62,7 @@
 
 @media (max-width: 950px) {
     .title {
-        font-size: 3rem;
+        font-size: 48px;
         align-content: center;
         justify-content: center;
     }
@@ -70,12 +70,12 @@
     .description {
         max-width: 270px;
         min-width: 270px;
-        font-size: 1.2rem;
+        font-size: 19px;
     }
 }
 
 /*LongTitle is the same as title but will resize more aggressively*/
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     .longTitle {
         font-size: 35px;
     }
