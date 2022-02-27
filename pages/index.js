@@ -53,11 +53,11 @@ export default function Home() {
           </Grid>
       </main>
 
-      <footer>
-        <Link href="https://github.com/NineBallo/NewWebsite" passHref>
-          <h4 className={SCommon.footerLink}>Made by ME!</h4>
-        </Link>
-      </footer>
+        <footer>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/NineBallo/MyWebsite">
+                <h4 className={SCommon.footerLink}>Made by ME!</h4>
+            </a>
+        </footer>
     </div>
   );
 }

@@ -11,6 +11,7 @@ import SCarousel from "../../styles/Components/Carousel.module.css"; //TODO turn
 import BabyMander from "../../public/Projects/Solamanders/BabyMander.webp";
 import Gen1Mander from "../../public/Projects/Solamanders/Gen1Mander.webp";
 import TerrariumTank from "../../public/Projects/Solamanders/TTank.webp";
+import Link from "next/link";
 
 export default function Solamanders() {
     return (
@@ -97,8 +98,6 @@ export default function Solamanders() {
                     " such as the low transaction fees, quick transaction speeds, and a relatively nice dev environment/community."}
                 />
             </InfoParent>
-
-
         </div>
     );
 }

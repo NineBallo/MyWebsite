@@ -11,6 +11,7 @@ import SCarousel from "../../styles/Components/Carousel.module.css";
 
 import showcase1 from "../../public/Projects/NineEngine/engine2.webp";
 import showcase2 from "../../public/Projects/NineEngine/engine4.webp";
+import Link from "next/link";
 
 export default function NineEngine() {
     return (

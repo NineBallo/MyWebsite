@@ -10,6 +10,7 @@ import OpenRGB from "../public/Volunteer/OpenRGB.webp";
 import SlamBKB from "../public/Volunteer/SLAM.webp"
 import Fest from "../public/Volunteer/CFest.webp"
 import Northlands from "../public/Volunteer/Northlands.webp"
+import Link from "next/link";
 
 export default function Volunteer() {
     return (
@@ -84,7 +85,11 @@ export default function Volunteer() {
 
             </SnakeBoxParent>
 
-
+            <footer>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/NineBallo/MyWebsite">
+                    <h4 className={SCommon.footerLink}>Made by ME!</h4>
+                </a>
+            </footer>
         </div>
     );
 }

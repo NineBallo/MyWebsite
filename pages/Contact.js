@@ -55,9 +55,9 @@ export default function ContactMe() {
 
 
             <footer>
-                <Link href="https://github.com/NineBallo/NewWebsite" passHref>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/NineBallo/MyWebsite">
                     <h4 className={SCommon.footerLink}>Made by ME!</h4>
-                </Link>
+                </a>
             </footer>
         </div>
     );
